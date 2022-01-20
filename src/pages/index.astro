@@ -1,42 +1,21 @@
 ---
-// Component Imports
-import Home from '../components/Home.astro';
-// You can import components from any supported Framework here!
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'CS EXPO 2022';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+// JS
+import Layout from '../layouts/Main.astro'
 ---
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-		@import "../styles/home.css";
-	</style>
+<Layout title="CS EXPO 2022">
+	<!-- HTML -->
+	<div>
+		<h1 class="cs-title text-center">CS EXPO 2022</h1>
+	</div>
+
+	<!-- CSS -->
 
 	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
+	.cs-title {
+		color: #9147ff;
+		margin-top: 15vh;
+		font-size: 10rem;
+	}
 	</style>
-</head>
-<body>
-	<main>
-		<Home />
-	</main>
-</body>
-</html>
+</Layout>
