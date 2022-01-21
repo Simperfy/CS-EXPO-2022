@@ -7,7 +7,7 @@ export default function ButtonTheme() {
     const [icon, setIcon] = useState(darkModeIcon);
 
     const toggleTheme = () => {
-        if (localStorage.theme === 'dark') localStorage.theme = 'light';
+        if (localStorage.theme === 'dark' || !localStorage.theme) localStorage.theme = 'light';
         else if (localStorage.theme === 'light') localStorage.theme = 'dark';
         processTheme();
     };

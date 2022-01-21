@@ -16,7 +16,7 @@ export default function Header() {
 		setIsDropdownActive((prev) => !prev);
 	}
 
-	const isCurrentSegment = (segment) => segment === window.location.pathname;
+	const isCurrentSegment = (segment) => segment.split('/')[1] === window.location.pathname.split('/')[1];
 
 	useEffect(() => {
 		const newLinks = links.map((link) => ({...link, active: isCurrentSegment(link.segment)}));
