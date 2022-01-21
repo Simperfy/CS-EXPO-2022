@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Main/Header.jsx';
+import Footer from '../components/Main/Footer.astro';
 let { title } = Astro.props;
 ---
 <html lang="en">
@@ -8,23 +10,13 @@ let { title } = Astro.props;
 	<title>{title}</title>
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-		@import "../styles/home.css";
-	</style>
-
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
+	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
 </head>
 <body>
+	<Header client:visible/>
 	<main>
         <slot/>
 	</main>
+	<Footer />
 </body>
 </html>
