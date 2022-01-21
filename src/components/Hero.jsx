@@ -15,10 +15,11 @@ export default function Hero({title, description, imageSrc, isDateVisible = fals
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
-                minHeight: 1000.00,
-                minWidth: 1000.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
+                minHeight: screen.height,
+                minWidth: screen.height,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                spacing: screen.width <= 1366.0 ? 20.0 : 15.0,
                 color: "#742843",
                 backgroundColor: "#1C1626"
             }))
