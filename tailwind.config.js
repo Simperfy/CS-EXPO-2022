@@ -12,6 +12,10 @@ module.exports = {
           csSecondary: '#FFD482',
           csBGPrimary: '#333333',
         },
+        fontFamily: {
+          body: ['Roboto', 'sans-serif'],
+          hero: ['Ginto Nord', 'sans-serif']
+        },
       }
     }
 };

@@ -11,8 +11,9 @@ let { title } = Astro.props;
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 </head>
-<body class="text-black dark:bg-black dark:text-white">
+<body class="text-black dark:bg-black dark:text-white font-body">
 	<Header client:load/>
 	<main>
         <slot/>
