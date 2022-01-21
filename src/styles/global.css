@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Ginto Nord';
+    src: url("/assets/fonts/Ginto_Nord_Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Ginto Nord';
+    font-weight: 700;
+    src: url("/assets/fonts/Ginto_Nord_Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Ginto Nord';
+    font-weight: 900;
+    src: url("/assets/fonts/Ginto_Nord_Black.ttf") format("truetype");
+}
