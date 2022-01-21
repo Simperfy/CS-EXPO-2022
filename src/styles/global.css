@@ -4,11 +4,18 @@
 
 @font-face {
     font-family: 'Ginto Nord';
-    font-weight: 400;
-    src: url("/assets/fonts/Ginto_Nord_Bold.ttf") format("ttf");
+    src: url("/assets/fonts/Ginto_Nord_Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Ginto Nord';
-    font-weight: 500;
-    src: url("/assets/fonts/Ginto_Nord_Black.ttf") format("ttf");
+    font-weight: 700;
+    src: url("/assets/fonts/Ginto_Nord_Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Ginto Nord';
+    font-weight: 900;
+    src: url("/assets/fonts/Ginto_Nord_Black.ttf") format("truetype");
 }

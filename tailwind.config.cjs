@@ -14,7 +14,7 @@ module.exports = {
         },
         fontFamily: {
           body: ['Roboto', 'sans-serif'],
-          hero: ['Ginto Nord', 'sans-serif']
+          display: ['Ginto Nord', 'sans-serif']
         },
       }
     }
