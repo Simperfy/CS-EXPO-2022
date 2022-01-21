@@ -3,7 +3,7 @@ import Header from '../components/Main/Header.jsx';
 import Footer from '../components/Main/Footer.astro';
 let { title } = Astro.props;
 ---
-<html lang="en">
+<html lang="en" class="dark">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
@@ -12,8 +12,8 @@ let { title } = Astro.props;
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")}>
 </head>
-<body>
-	<Header client:visible/>
+<body class="text-black dark:bg-black dark:text-white">
+	<Header client:load/>
 	<main>
         <slot/>
 	</main>
