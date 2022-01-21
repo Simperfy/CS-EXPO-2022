@@ -10,6 +10,7 @@ module.exports = {
         colors: {
           csPrimary: '#9147FF',
           csSecondary: '#FFD482',
+          csBGPrimary: '#333333',
         },
       }
     }
