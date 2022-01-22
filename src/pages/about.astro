@@ -1,6 +1,8 @@
 ---
 // JS
-import Layout from '../layouts/Main.astro'
+import Layout from '../layouts/Main.astro';
+
+import Hero from '../components/Hero.jsx';
 ---
 
 <!-- CSS scoped -->
@@ -13,7 +15,14 @@ import Layout from '../layouts/Main.astro'
 
 <Layout title="CS EXPO 2022">
 	<!-- HTML -->
-	<div class="h-screen">
-		<h1 class="cs-title text-center">About</h1>
+	<!-- HTML -->
+	<div class="flex flex-col gap-24 pb-24">
+		<Hero
+			client:visible
+			title="ABOUT US"
+			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+			Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+			imageSrc="http://placekitten.com/g/700/700"
+		/>
 	</div>
 </Layout>
