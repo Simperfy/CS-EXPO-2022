@@ -1,19 +1,103 @@
 ---
 // JS
 import Layout from '../layouts/Main.astro'
+import Hero from '../components/Hero.jsx';
+import '../styles/hero.css';
+import '../styles/partners.css';
+import {DictString, DictDir} from '../components/Dictionaries/Strings.js';
+
 ---
 
-<!-- CSS scoped -->
-<style>
-.cs-title {
-	color: #9147ff;
-	font-size: 5rem;
-}
-</style>
-
-<Layout title="CS EXPO 2022">
+<Layout title= { DictString("page_partners") } >
 	<!-- HTML -->
-	<div class="h-screen">
-		<h1 class="cs-title text-center">Partners</h1>
+	<div class="flex flex-col">
+		<Hero
+			title={ DictString("page_partners") }
+			description={ DictString("placeholder_long") }
+			imageSrc={ DictDir("placeholder_700") }
+			client:visible
+		/>
+	</div>
+	<div class="partner-disp">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 text-center">
+					<div class="partner-cards">
+						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
+						<h1 class="partner-name">Sponsor Name</h1>
+						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
 </Layout>
