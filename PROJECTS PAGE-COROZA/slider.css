@@ -1,0 +1,250 @@
+.carousel-wrapper{
+  height:100%;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(FONTS/Roobert/HEAVY.otf) format("opentype");
+}
+
+h1 {
+  font-family: myFirstFont;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+p{
+  font-family: myFirstFont;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+.logo-size {
+  width: 100%; 
+  height: auto; 
+  max-width: 100px;
+}
+
+.btn{
+    font-family: myFirstFont; 
+    font-size: 16px; 
+    text-align: center; 
+    color: #9147ff; 
+    background: transparent; 
+    border: 2px solid #9147ff;
+}
+.btn:hover{
+    color: white;
+    background-color: #9147ff;
+    cursor: pointer;
+
+}
+
+.btn2{
+    font-family: myFirstFont; 
+    font-size: 16px; 
+    text-align: center; 
+    color: #ffd482; 
+    background: transparent; 
+    border: 2px solid #ffd482;
+}
+.btn2:hover{
+    color: white;
+    background-color: #ffd482;
+    cursor: pointer;
+
+}
+
+.btn3{
+    font-family: myFirstFont; 
+    font-size: 16px; 
+    text-align: center; 
+    color: #323181; 
+    background: transparent; 
+    border: 2px solid #323181;
+}
+.btn3:hover{
+    color: white;
+    background-color: #323181;
+    cursor: pointer;
+
+}
+.arrow{
+  border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 12px;
+    opacity: 50%;
+}
+
+.arrow:hover{
+  opacity: 100;
+}
+
+.arrow-prev{
+  left:5%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+  width: 2%;
+}
+
+.arrow-prev::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+ 
+.arrow-next{
+  right:5%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  width: 2%;
+  }
+
+.arrow-next::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.light{
+  color:white;
+}
+
+@media (max-width: 100%) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 7;
+    opacity: 1;
+  background:url('Background/SVM.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  }
+.item-2{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-3{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-4{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-5{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-6{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-7{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.item-8{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-9{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.item-10{
+  background:url('Background/black.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4,
+#item-5:target ~ .item-5, #item-6:target ~ .item-6, #item-7:target ~ .item-7,
+#item-8:target ~ .item-8, #item-9:target ~ .item-9, #item-10:target ~ .item-10 {
+    z-index: 10;
+    opacity: 1;
+  }
+
