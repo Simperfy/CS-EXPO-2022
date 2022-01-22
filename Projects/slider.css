@@ -154,7 +154,7 @@ p{
 .item-1 {
     z-index: 7;
     opacity: 1;
-  background:url('Background/SVM.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -162,7 +162,7 @@ p{
   background-color: #464646;
   }
 .item-2{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -170,14 +170,14 @@ p{
   background-color: #464646;
 }
 .item-3{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
 }
 .item-4{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -185,7 +185,7 @@ p{
   background-color: #464646;
 }
 .item-5{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -193,14 +193,14 @@ p{
   background-color: #464646;
 }
 .item-6{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
 }
 .item-7{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -209,7 +209,7 @@ p{
 }
 
 .item-8{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -217,7 +217,7 @@ p{
   background-color: #464646;
 }
 .item-9{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -225,7 +225,7 @@ p{
   background-color: #464646;
 }
 .item-10{
-  background:url('Background/black.jpg');
+  background:url('Background/guitar.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-size: cover;
