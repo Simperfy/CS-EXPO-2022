@@ -5,7 +5,7 @@ const dictString = {
     "placeholder_short" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "placeholder_medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc interdum sollicitudin purus, eu sollicitudin nisi porta in.",
     "placeholder_long" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc interdum sollicitudin purus, eu sollicitudin nisi porta in. Integer fringilla aliquet felis, et convallis ex euismod nec.",
-    "page_partners" : "OUR PARTNERS",
+    "page_partners" : "Our Partners",
     "page_about" : "About",
     "page_gallery" : "Gallery",
     "page_projects" : "Projects",

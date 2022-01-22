@@ -1,6 +1,6 @@
 ---
 // JS
-import Layout from '../layouts/Main.astro'
+import Layout from '../layouts/Partners.astro'
 import Hero from '../components/Hero.jsx';
 import '../styles/hero.css';
 import '../styles/partners.css';
@@ -8,96 +8,113 @@ import {DictString, DictDir} from '../components/Dictionaries/Strings.js';
 
 ---
 
+
 <Layout title= { DictString("page_partners") } >
 	<!-- HTML -->
 	<div class="flex flex-col">
 		<Hero
 			title={ DictString("page_partners") }
-			description={ DictString("placeholder_long") }
+			description={ DictString("placeholder_medium") }
 			imageSrc={ DictDir("placeholder_700") }
 			client:visible
 		/>
 	</div>
-	<div class="partner-disp">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+	<div class="container-fluid" style="background: rgba(145, 71, 255, 0.1);">
+		<div class="container pt-5 pb-5" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<div class="container card mt-5 mb-5">
+							<img class="card-image-top pt-3 ps-3 pe-3" src="https://placekitten.com/g/150/100"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<br>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 text-center">
-					<div class="partner-cards">
-						<img class="partner-rectangle" src="http://placekitten.com/g/150/100"/>
-						<h1 class="partner-name">Sponsor Name</h1>
-						<h2 class="partner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
 		</div>
+		
+	
+	
 	</div>
+	
+	
 </Layout>
