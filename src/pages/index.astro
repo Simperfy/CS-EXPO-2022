@@ -1,6 +1,7 @@
 ---
 // JS
 import Layout from '../layouts/Main.astro'
+import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
 import Carousel from '../components/Carousel.tsx';
 import '../styles/carousel.css';
@@ -55,14 +56,26 @@ const images = [
 <Layout title="CS EXPO 2022">
 	<!-- HTML -->
 	<div class="flex flex-col gap-24 pb-24">
-		<Hero
-			client:visible
-			title="CS EXPO 2022"
-			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-			Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
-			imageSrc="/images/placeholders/700.png"
-			isDateVisible
-		/>
+		<HeroContainer client:visible>
+			<Hero
+				title="CS EXPO 2022"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				imageSrc="/images/placeholders/700.png"
+				dateObj={{month: 'March 1 - 2, 2022', time: '9AM'}}
+			/>
+
+			<div class="h-24 bg-black w-full"></div>
+
+			<Hero
+				title="DEV DAY"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				imageSrc="/images/placeholders/700.png"
+				dateObj={{month: 'March 18, 2022', time: '9AM'}}
+				inverse
+			/>
+		</HeroContainer>
 
 		<Carousel
 			client:visible
