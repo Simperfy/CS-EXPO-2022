@@ -24,7 +24,7 @@ export default function Header() {
 	}, []);
 
 	return (
-		<nav className="border-gray-200 px-2 md:px-12 py-2.5 header-bg text-white fixed top-0 w-full z-50">
+		<nav className="border-gray-200 px-4 md:px-14 py-2.5 header-bg text-white fixed top-0 w-full z-50">
 			<div className="flex flex-wrap justify-between items-center">
 				<div className="flex flex-wrap w-full md:w-fit justify-between md:justify-start items-center text-center">
 					<a href="/" className="mr-10">
