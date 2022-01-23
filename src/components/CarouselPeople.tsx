@@ -31,7 +31,7 @@ export default function CarouselPeople({images}) {
             <div className="hidden md:flex md:w-2/4 flex-col items-start justify-center">
                 <h1 class="text-4xl font-display font-bold text-csPrimary text-center w-2/3">Speakers</h1>
                 <div className="p-8 rounded border-2 border-csSecondary w-2/3">
-                    <p>
+                    <p className="text-white">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse quis neque vel augue dictum scelerisque ut nec sapien.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
