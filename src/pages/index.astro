@@ -3,53 +3,32 @@
 import Layout from '../layouts/Main.astro'
 import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
-import Carousel from '../components/Carousel.tsx';
-import '../styles/carousel.css';
+import CarouselPeople from '../components/CarouselPeople.tsx';
 
-const images = [
+// TODO: move to json or md
+const carouselPeopleImages = [
 	{
-		title: 'Feature 1',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		title: "Speaker 1",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
 	},
 	{
-		title: 'Feature 2',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		title: "Speaker 2",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
 	},
 	{
-		title: 'Feature 3',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
-	},
-	{
-		title: 'Feature 4',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
-	},
-	{
-		title: 'Feature 5',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
-	},
+		title: "Speaker 3",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
+	}
 ];
 ---
 
 <!-- CSS scoped -->
 <style>
-.cs-title {
-	color: #9147ff;
-	font-size: 5rem;
+.projects-container {
+	height: 50rem;
 }
 </style>
 
@@ -77,9 +56,20 @@ const images = [
 			/>
 		</HeroContainer>
 
-		<Carousel
+		<div class="relative projects-container">
+			<div class="relative z-10 flex flex-col justify-center items-center h-full">
+				<h1 class="text-4xl font-display font-bold text-csPrimary">Projects</h1>
+				<p class="text-2xl text-center text-white w-2/3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+					consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+				<a class="mt-4 border-2 p-2 rounded border-csSecondary text-csSecondary font-bold font-2xl w-fit hover:bg-csSecondary hover:text-white" href="/projects">View List</a>
+			</div>
+			<img class="block absolute top-0 left-0 h-full w-full brightness-75" src="/images/placeholders/1920x1080.png" alt="Project Collage">
+		</div>
+
+		<CarouselPeople
 			client:visible
-			images={images}
+			images={carouselPeopleImages}
 		/>
 	</div>
 </Layout>
