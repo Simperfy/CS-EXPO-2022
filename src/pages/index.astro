@@ -4,42 +4,39 @@ import Layout from '../layouts/Main.astro'
 import Hero from '../components/Hero.tsx';
 import Carousel from '../components/Carousel.tsx';
 import '../styles/carousel.css';
+import {DictString, DictDir} from '../components/Dictionaries/Strings.js';
+
 
 const images = [
 	{
-		title: 'Feature 1',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title: DictString("placeholder_title"),
+		description: DictString("placeholder_medium") ,
 		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		backgroundImage: DictDir("placeholder_1080"),
 	},
 	{
-		title: 'Feature 2',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title: DictString("placeholder_title"),
+		description: DictString("placeholder_medium"),
 		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		backgroundImage: DictDir("placeholder_1080"),
 	},
 	{
-		title: 'Feature 3',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title: DictString("placeholder_title"),
+		description: DictString("placeholder_medium"),
 		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		backgroundImage: DictDir("placeholder_1080"),
 	},
 	{
-		title: 'Feature 4',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title: DictString("placeholder_title"),
+		description: DictString("placeholder_medium"),
 		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		backgroundImage: DictDir("placeholder_1080"),
 	},
 	{
-		title: 'Feature 5',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, \
-			consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title: DictString("placeholder_title"),
+		description: DictString("placeholder_medium"),
 		link: '#',
-		backgroundImage: '/images/placeholders/1920x1080.png',
+		backgroundImage: DictDir("placeholder_1080"),
 	},
 ];
 ---
@@ -52,15 +49,14 @@ const images = [
 }
 </style>
 
-<Layout title="CS EXPO 2022">
+<Layout title= { DictString("web_title") }>
 	<!-- HTML -->
 	<div class="flex flex-col gap-24 pb-24">
 		<Hero
 			client:visible
-			title="CS EXPO 2022"
-			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-			Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
-			imageSrc="/images/placeholders/700.png"
+			title={ DictString("web_title") }
+			description={ DictString("placeholder_long") }
+			imageSrc={ DictDir("placeholder_700") }
 			isDateVisible
 		/>
 

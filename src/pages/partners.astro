@@ -1,19 +1,126 @@
 ---
 // JS
-import Layout from '../layouts/Main.astro'
+import Layout from '../layouts/Partners.astro'
+import Hero from '../components/Hero.tsx';
+import '../styles/hero.css';
+import '../styles/partners.css';
+import {DictString, DictDir} from '../components/Dictionaries/Strings.js';
+
 ---
 
-<!-- CSS scoped -->
 <style>
-.cs-title {
-	color: #9147ff;
-	font-size: 5rem;
+.card-image-top {
+	margin-bottom: -2vh;
+    object-fit: none;
 }
 </style>
 
-<Layout title="CS EXPO 2022">
+<Layout title= { DictString("page_partners") } >
 	<!-- HTML -->
-	<div class="h-screen">
-		<h1 class="cs-title text-center">Partners</h1>
+	<div class="flex">
+		<Hero
+			title={ DictString("page_partners") }
+			description={ DictString("placeholder_medium") }
+			imageSrc={ DictDir("placeholder_700") }
+			client:visible
+		/>
 	</div>
+	<div class="container-fluid" style="background: rgba(145, 71, 255, 0.1);">
+		<div class="container ps-5 pt-5 pb-5" >
+			<div class="container">
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ DictString("placeholder_title") }</h1>
+								<h2 class="card-text">{ DictString("placeholder_long") }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	
+	</div>
+	
+	
 </Layout>
