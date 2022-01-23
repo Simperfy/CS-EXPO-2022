@@ -3,7 +3,7 @@ import NET from 'vanta/dist/vanta.net.min'
 import '../styles/hero.css';
 
 
-export default function Hero({title, description, imageSrc, isDateVisible = false}) {
+export default function Hero({children, title, description, imageSrc, isDateVisible = false}) {
     const [vantaEffect, setVantaEffect] = useState(0)
     const myRef = useRef(null);
 
@@ -11,7 +11,6 @@ export default function Hero({title, description, imageSrc, isDateVisible = fals
         if (!vantaEffect) {
             setVantaEffect(NET({
                 el: myRef.current,
-                THREE: THREE,
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
