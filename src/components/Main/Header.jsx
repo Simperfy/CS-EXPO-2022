@@ -38,7 +38,7 @@ export default function Header() {
 						<ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm font-bold">
 							{links.map((link, id) => (
 								<li key={link.name + id}>
-									<a href={link.segment} className={`${link.active && 'text-csSecondary underline underline-offset-4 decoration-2 decoration-csSecondary'} text-base block py-2 pr-4 pl-3 md:p-0`}>{link.name}</a>
+									<a href={link.segment} className={`${link.active ? 'text-csSecondary hover:text-csSecondary' : 'hover:text-white'} hover:underline decoration-csSecondary decoration-2 underline-offset-4 text-base block py-2 pr-4 pl-3 md:p-0`}>{link.name}</a>
 								</li>
 							))}
 						</ul>
