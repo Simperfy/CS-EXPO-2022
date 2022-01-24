@@ -23,6 +23,11 @@ const carouselPeopleImages = [
 		backgroundImage: "/images/placeholders/400x600.png"
 	}
 ];
+
+const carouselContent = {
+	title: "Speakers",
+	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+};
 ---
 
 <!-- CSS scoped -->
@@ -70,6 +75,9 @@ const carouselPeopleImages = [
 		<CarouselPeople
 			client:visible
 			images={carouselPeopleImages}
+			title={carouselContent.title}
+			description={carouselContent.description}
+			bgColor={"bg-csPrimaryDark"}
 		/>
 	</div>
 </Layout>
