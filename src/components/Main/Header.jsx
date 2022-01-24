@@ -24,8 +24,8 @@ export default function Header() {
 	}, []);
 
 	return (
-		<nav className="border-gray-200 px-2 sm:px-4 py-2.5 header-bg text-white fixed top-0 w-full z-10">
-			<div className="container flex flex-wrap justify-between items-center mx-auto">
+		<nav className="border-gray-200 px-4 md:px-14 py-2.5 header-bg text-white fixed top-0 w-full z-50">
+			<div className="flex flex-wrap justify-between items-center">
 				<div className="flex flex-wrap w-full md:w-fit justify-between md:justify-start items-center text-center">
 					<a href="/" className="mr-10">
 						<img src="/images/logo/64px.png" />
@@ -38,7 +38,7 @@ export default function Header() {
 						<ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm font-bold">
 							{links.map((link, id) => (
 								<li key={link.name + id}>
-									<a href={link.segment} className={`${link.active && 'text-csSecondary underline underline-offset-4 decoration-2 decoration-csSecondary'} text-base block py-2 pr-4 pl-3 md:p-0`}>{link.name}</a>
+									<a href={link.segment} className={`${link.active ? 'text-csSecondary hover:text-csSecondary' : 'hover:text-white'} hover:underline decoration-csSecondary decoration-2 underline-offset-4 text-base block py-2 pr-4 pl-3 md:p-0`}>{link.name}</a>
 								</li>
 							))}
 						</ul>

@@ -1,68 +1,75 @@
 ---
 // JS
 import Layout from '../layouts/Main.astro'
+import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
-import Carousel from '../components/Carousel.tsx';
-import '../styles/carousel.css';
-import {DictString, DictDir} from '../components/Dictionaries/Strings.js';
+import CarouselPeople from '../components/CarouselPeople.tsx';
 
-
-const images = [
+// TODO: move to json or md
+const carouselPeopleImages = [
 	{
-		title: DictString("placeholder_title"),
-		description: DictString("placeholder_medium") ,
-		link: '#',
-		backgroundImage: DictDir("placeholder_1080"),
+		title: "Speaker 1",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
 	},
 	{
-		title: DictString("placeholder_title"),
-		description: DictString("placeholder_medium"),
-		link: '#',
-		backgroundImage: DictDir("placeholder_1080"),
+		title: "Speaker 2",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
 	},
 	{
-		title: DictString("placeholder_title"),
-		description: DictString("placeholder_medium"),
-		link: '#',
-		backgroundImage: DictDir("placeholder_1080"),
-	},
-	{
-		title: DictString("placeholder_title"),
-		description: DictString("placeholder_medium"),
-		link: '#',
-		backgroundImage: DictDir("placeholder_1080"),
-	},
-	{
-		title: DictString("placeholder_title"),
-		description: DictString("placeholder_medium"),
-		link: '#',
-		backgroundImage: DictDir("placeholder_1080"),
-	},
+		title: "Speaker 3",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: "/images/placeholders/400x600.png"
+	}
 ];
 ---
 
 <!-- CSS scoped -->
 <style>
-.cs-title {
-	color: #9147ff;
-	font-size: 5rem;
+.projects-container {
+	height: 50rem;
 }
 </style>
 
-<Layout title= { DictString("web_title") }>
+<Layout title="CS Expo 2022">
 	<!-- HTML -->
-	<div class="flex flex-col gap-24 pb-24">
-		<Hero
-			client:visible
-			title={ DictString("web_title") }
-			description={ DictString("placeholder_long") }
-			imageSrc={ DictDir("placeholder_700") }
-			isDateVisible
-		/>
+	<div class="flex flex-col gap-4 pb-4">
+		<HeroContainer client:visible>
+			<Hero
+				title="CS EXPO 2022"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				imageSrc="/images/placeholders/700.png"
+				dateObj={{month: 'March 1 - 2, 2022', time: '9AM'}}
+			/>
 
-		<Carousel
+			<div class="h-4 bg-white dark:bg-black w-full"></div>
+
+			<Hero
+				title="DEV DAY"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				imageSrc="/images/placeholders/700.png"
+				dateObj={{month: 'March 18, 2022', time: '9AM'}}
+				inverse
+			/>
+		</HeroContainer>
+
+		<div class="relative projects-container">
+			<div class="relative z-10 flex flex-col justify-center items-center h-full">
+				<h1 class="text-4xl font-display font-bold text-csPrimary">Projects</h1>
+				<p class="text-2xl text-center text-white w-2/3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+					consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+				<a class="mt-4 border-2 p-2 rounded border-csSecondary text-csSecondary font-bold font-2xl w-fit hover:bg-csSecondary hover:text-white" href="/projects">View List</a>
+			</div>
+			<img class="block absolute top-0 left-0 h-full w-full brightness-75" src="/images/placeholders/1920x1080.png" alt="Project Collage">
+		</div>
+
+		<CarouselPeople
 			client:visible
-			images={images}
+			images={carouselPeopleImages}
 		/>
 	</div>
 </Layout>
