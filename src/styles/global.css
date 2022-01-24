@@ -19,3 +19,51 @@
     font-weight: 900;
     src: url("/assets/fonts/Ginto_Nord_Black.ttf") format("truetype");
 }
+
+.main-content {
+    padding-top: 5.25rem;
+}
+
+.header-bg {
+    background: linear-gradient(270deg, #33185a, #493c25, #33185a);
+    background-size: 600% 600%;
+
+    -webkit-animation: header-dynamic-bg 30s ease infinite;
+    -moz-animation: header-dynamic-bg 30s ease infinite;
+    animation: header-dynamic-bg 30s ease infinite;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@-webkit-keyframes header-dynamic-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes header-dynamic-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes header-dynamic-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
