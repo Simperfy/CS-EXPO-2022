@@ -1,10 +1,13 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselComponent} from 'react-responsive-carousel';
-import '../styles/gallery.css';
+import { useMediaQuery } from 'react-responsive'
 
 
-export default function Carousel({images}) {
+
+export default function Carousel({images, img}) {
+
+        const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
 
     return (
         // @ts-ignore
@@ -14,24 +17,27 @@ export default function Carousel({images}) {
                 showThumbs={false}
                 autoPlay
             >
-                {images.map((image) => (
-                    <div key={image.title}>
 
-                        <div class="hidden md:flex">
+                {isBigScreen ? (
+                    img.map((img) => (
+                    <div key={img}>
+
                             <div class="inline-grid grid-cols-3 gap-4">
-                                    <img className="carousel-img brightness-75" src={image.backgroundImageF} />
-                                    <img className="carousel-img brightness-75" src={image.backgroundImageS} />
-                                    <img className="carousel-img brightness-75" src={image.backgroundImageT} />
+                                    <img className="carousel-img brightness-75" src={img.backgroundImageF} />
+                                    <img className="carousel-img brightness-75" src={img.backgroundImageS} />
+                                    <img className="carousel-img brightness-75" src={img.backgroundImageT} />
                             </div>
                         </div>
 
-                        
-                        <div class="md:hidden">
+                ))) : 
+                (images.map((image) => (
+                    <div key={image}>
                             <img className="carousel-img brightness-75" src={image.backgroundImage} />
                         </div>
 
-                    </div>
-                ))}
+                ))) }
+
+
             </CarouselComponent>
 
 

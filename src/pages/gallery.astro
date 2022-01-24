@@ -22,7 +22,7 @@ const img = [
     backgroundImageF: 'https://via.placeholder.com/300x300/0000FFC',
 	backgroundImageS: 'https://via.placeholder.com/300x300/0000FFC',
 	backgroundImageT: 'https://via.placeholder.com/300x300/0000FFC',  
-  },
+  }
 ]
 
 const images = [
@@ -56,9 +56,61 @@ const images = [
   }
 
 ];
----
+
+
+const img2k19 = [
+  {
+    backgroundImageF: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageS: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageT: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+  {
+    backgroundImageF: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageS: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageT: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+  {
+    backgroundImageF: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageS: 'https://via.placeholder.com/300x300/0000FFC',
+	backgroundImageT: 'https://via.placeholder.com/300x300/0000FFC',  
+  }
+]
+
+const images2k19 = [
+  {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+  {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+  {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  },
+   {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+  }
+
+];
+
 
 ---
+
 
 
 	
@@ -89,10 +141,22 @@ const images = [
 		<div  class="flex justify-center">
 			<div class="flex flex-wrap justify-center md:justify-start gap-2 font-display font-black text-4xl text-[#9147FF]">CSCON 2k18</div>
 		</div>
+
 		<Carousel
 			client:visible
 			images={images}
+			img ={img}
 		/>
+
+		<div  class="flex justify-center">
+			<div class="flex flex-wrap justify-center md:justify-start gap-2 font-display font-black text-4xl text-[#9147FF]">CSCON 2k19</div>
+		</div>
+		<Carousel
+			client:visible
+			images={images2k19}
+			img ={img2k19}
+		/>
+
 
 		
 	</div>
