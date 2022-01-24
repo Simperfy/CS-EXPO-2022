@@ -13,7 +13,8 @@ module.exports = {
           csSecondary: '#FFD482',
           csSecondaryDark: '#38342C',
           csBGPrimary: '#333333',
-          csBGSpeakers: '#D0C7B7'
+          csBGSpeakers: '#D0C7B7',
+          csBGCommittee: '#38332C'
         },
         fontFamily: {
           body: ['Roboto', 'sans-serif'],
