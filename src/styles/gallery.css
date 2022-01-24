@@ -1,0 +1,14 @@
+@media only screen and (max-width: 768){
+    .wideScreen{
+        visibility: hidden;
+        display:none;
+    }
+}
+
+
+@media only screen and (max-width: 1080){
+    .mobileScreen{
+        visibility: hidden;
+        display:none;
+    }
+}
