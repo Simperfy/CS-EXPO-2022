@@ -8,7 +8,7 @@ export default function CarouselPeople({images}) {
         <div className="flex gap-24 h-fit py-24 bg-csPrimaryDark">
             <div className="w-full md:w-2/4 flex flex-col justify-center items-center md:items-end">
                 <div className="w-full block md:hidden">
-                    <h1 class="text-4xl font-display font-bold text-csPrimary text-center">Speakers</h1>
+                    <h1 className="text-4xl font-display font-bold text-csPrimary text-center">Speakers</h1>
                 </div>
                 <div className="bg-gray-500 w-full max-w-sm md:w-96">
                     {/* @ts-ignore */}
@@ -29,7 +29,7 @@ export default function CarouselPeople({images}) {
                 </div>
             </div>
             <div className="hidden md:flex md:w-2/4 flex-col items-start justify-center">
-                <h1 class="text-4xl font-display font-bold text-csPrimary text-center w-2/3">Speakers</h1>
+                <h1 className="text-4xl font-display font-bold text-csPrimary text-center w-2/3">Speakers</h1>
                 <div className="p-8 rounded border-2 border-csSecondary w-2/3">
                     <p className="text-white">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
