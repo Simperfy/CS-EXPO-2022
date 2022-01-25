@@ -5,34 +5,43 @@ import { useMediaQuery } from 'react-responsive'
 
 
 
-export default function Carousel({images, img}) {
+export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColor}) {
 
         const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
 
     return (
         // @ts-ignore
         
-        
-            <CarouselComponent
+            <CarouselComponent className={'flex h-fit py-10 ' + bgColor}
                 showThumbs={false}
                 autoPlay
             >
 
                 {isBigScreen ? (
-                    img.map((img) => (
-                    <div key={img}>
 
-                            <div class="inline-grid grid-cols-3 gap-4">
-                                    <img className="carousel-img brightness-75" src={img.backgroundImageF} />
-                                    <img className="carousel-img brightness-75" src={img.backgroundImageS} />
-                                    <img className="carousel-img brightness-75" src={img.backgroundImageT} />
+                        imageDesktop.map((imageDesktop) => (
+                            <div key={imageDesktop}>
+
+                                <div  class="flex justify-center my-5">
+                                    <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
+                                </div>
+
+                                <div className="inline-grid grid-cols-3 gap-x-24 py-10">
+                                        <img className="h-[400px] brightness-75" src={imageDesktop.backgroundImageFirst} />
+                                            <div className="relative">
+                                                <img className="absolute left-0 bottom-10 h-[400px] brightness-75" src={imageDesktop.backgroundImageSecond} />
+                                            </div>
+                                        <img className="h-[400px] brightness-75" src={imageDesktop.backgroundImageThird} />
+                                </div>
                             </div>
-                        </div>
-
-                ))) : 
-                (images.map((image) => (
-                    <div key={image}>
-                            <img className="carousel-img brightness-75" src={image.backgroundImage} />
+                        ))
+                ): 
+                (imagesMobile.map((imagesMobile) => (
+                    <div key={imagesMobile}>
+                                <div  class="flex justify-center my-5">
+                                    <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
+                                </div>
+                                    <img className="carousel-img brightness-75" src={imagesMobile.backgroundImage} />
                         </div>
 
                 ))) }
@@ -40,8 +49,6 @@ export default function Carousel({images, img}) {
 
             </CarouselComponent>
 
-
-            
 
             
     );
