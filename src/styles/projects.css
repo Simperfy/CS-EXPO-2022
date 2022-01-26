@@ -2,7 +2,7 @@
 
 .projects .carousel-wrapper{
   height:100%;
-  position:relative;
+  /* position:relative; */
   width:100%;
   margin:0 auto;
 }
@@ -47,19 +47,19 @@
 }
 
 .projects .logo-size {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   max-width: 100px;
 }
 
 
 
 .projects .btn{
-    font-family: myFirstFont; 
-    font-size: 16px; 
-    text-align: center; 
-    color: #9147ff; 
-    background: transparent; 
+    font-family: myFirstFont;
+    font-size: 16px;
+    text-align: center;
+    color: #9147ff;
+    background: transparent;
     border: 2px solid #9147ff;
 }
 .projects .btn:hover{
@@ -70,11 +70,11 @@
 }
 
 .projects .btn2{
-    font-family: myFirstFont; 
-    font-size: 16px; 
-    text-align: center; 
-    color: #ffd482; 
-    background: transparent; 
+    font-family: myFirstFont;
+    font-size: 16px;
+    text-align: center;
+    color: #ffd482;
+    background: transparent;
     border: 2px solid #ffd482;
 }
 .projects .btn2:hover{
@@ -85,11 +85,11 @@
 }
 
 .projects .btn3{
-    font-family: myFirstFont; 
-    font-size: 16px; 
-    text-align: center; 
-    color: #323181; 
-    background: transparent; 
+    font-family: myFirstFont;
+    font-size: 16px;
+    text-align: center;
+    color: #323181;
+    background: transparent;
     border: 2px solid #323181;
 }
 .projects .btn3:hover{
@@ -123,7 +123,7 @@
   display: block;
   padding-bottom: 100%;
 }
- 
+
 .projects .arrow-next{
   right:5%;
   position:absolute;
@@ -160,7 +160,7 @@
     opacity: 1;
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -169,7 +169,7 @@
   .projects .item-2{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -178,7 +178,7 @@
 .projects .item-3{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -186,7 +186,7 @@
 .projects .item-4{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -195,7 +195,7 @@
 .projects .item-5{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -204,7 +204,7 @@
 .projects .item-6{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -212,7 +212,7 @@
 .projects .item-7{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -222,7 +222,7 @@
 .projects .item-8{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -231,7 +231,7 @@
 .projects .item-9{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -240,7 +240,7 @@
 .projects .item-10{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -248,7 +248,7 @@
 .projects .item-11{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -257,7 +257,7 @@
 .projects .item-12{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -266,7 +266,7 @@
 .projects .item-13{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -274,7 +274,7 @@
 .projects .item-14{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -283,7 +283,7 @@
 .projects .item-15{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -292,7 +292,7 @@
 .projects .item-16{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -300,7 +300,7 @@
 .projects .item-17{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -310,7 +310,7 @@
 .projects .item-18{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -319,7 +319,7 @@
 .projects .item-19{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -328,7 +328,7 @@
 .projects .item-20{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -336,7 +336,7 @@
 .projects .item-21{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -345,7 +345,7 @@
 .projects .item-22{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
@@ -353,7 +353,7 @@
 .projects .item-23{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -363,7 +363,7 @@
 .projects .item-24{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -372,7 +372,7 @@
 .projects .item-25{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -381,7 +381,7 @@
 .projects .item-26{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
-  background-position: center center; 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
