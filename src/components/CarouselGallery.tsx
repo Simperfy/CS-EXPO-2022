@@ -26,12 +26,12 @@ export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColo
                                     <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
                                 </div>
 
-                                <div className="inline-grid grid-cols-3 gap-x-24 py-10">
-                                        <img className="h-[400px] brightness-75" src={imageDesktop.backgroundImageFirst} />
-                                            <div className="relative">
+                                <div className="inline-grid grid-cols-3 gap-x-15 py-10">
+                                        <img className="h-[400px] mr-5 brightness-75" src={imageDesktop.backgroundImageFirst} />
+                                            <div className="relative ml-5">
                                                 <img className="absolute left-0 bottom-10 h-[400px] brightness-75" src={imageDesktop.backgroundImageSecond} />
                                             </div>
-                                        <img className="h-[400px] brightness-75" src={imageDesktop.backgroundImageThird} />
+                                        <img className="h-[400px] ml-5 brightness-75" src={imageDesktop.backgroundImageThird} />
                                 </div>
                             </div>
                         ))
