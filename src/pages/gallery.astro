@@ -1,7 +1,126 @@
 ---
 // JS
 import Layout from '../layouts/Main.astro'
+import HeroContainer from '../components/HeroContainer.tsx';
+import Hero from '../components/Hero.tsx';
+import Carousel from '../components/CarouselGallery.tsx'
+import '../styles/carousel.css';
+
+
+const images2k18 = {
+  desktopView: [
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC',
+      },
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC',
+      },
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC', 
+      }
+  ],
+
+  mobileView: [
+
+    {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    }
+
+  ]
+
+};
+
+
+
+const images2k17 = {
+  desktopView: [
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC',
+      },
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC',
+      },
+      {
+      backgroundImageFirst: 'https://via.placeholder.com/300x300/0000FFC',
+      backgroundImageSecond: 'https://via.placeholder.com/300x300/FFFFFFF',
+      backgroundImageThird: 'https://via.placeholder.com/300x300/0000FFC',
+      }
+  ],
+
+  mobileView: [
+
+    {
+    backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    },
+    {
+      backgroundImage: 'https://via.placeholder.com/300x300/0000FFC',
+    }
+
+  ]
+
+};
+
+
 ---
+
+
+
+	
 
 <!-- CSS scoped -->
 <style>
@@ -13,7 +132,42 @@ import Layout from '../layouts/Main.astro'
 
 <Layout title="CS EXPO 2022">
 	<!-- HTML -->
-	<div class="h-screen">
-		<h1 class="cs-title text-center">Gallery</h1>
+	<div class="flex flex-col gap-4 pb-4">
+		<HeroContainer client:visible>
+			<Hero
+				title="CS Gallery"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				imageSrc="/images/placeholders/700.png"
+			/>
+
+			<div class="h-4 bg-white dark:bg-black w-full"></div>
+
+		</HeroContainer>
+
+	
+
+		<Carousel 
+			client:visible
+      slideTitle={"CSCON 2k18"}
+			imagesMobile={images2k18.mobileView}
+			imageDesktop ={images2k18.desktopView}
+      bgColor="bg-csPrimaryDark"
+
+		/>
+
+
+  
+		<Carousel 
+			client:visible
+      slideTitle={"CSCON 2k17"}
+			imagesMobile={images2k17.mobileView}
+			imageDesktop ={images2k17.desktopView}
+      bgColor="bg-csBGGallery"
+
+		/>
+  
+
+		
 	</div>
 </Layout>
