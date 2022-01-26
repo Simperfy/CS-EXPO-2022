@@ -15,6 +15,7 @@ module.exports = {
           csBGPrimary: '#333333',
           csBGSpeakers: '#D0C7B7', 
           csBGGallery:'#FFD4821A'
+          csBGCommittee: '#38332C'
         },
         fontFamily: {
           body: ['Roboto', 'sans-serif'],
