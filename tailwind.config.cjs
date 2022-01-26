@@ -14,7 +14,7 @@ module.exports = {
           csSecondaryDark: '#38342C',
           csBGPrimary: '#333333',
           csBGSpeakers: '#D0C7B7', 
-          csBGGallery:'#FFD4821A'
+          csBGGallery:'#FFD4821A',
           csBGCommittee: '#38332C'
         },
         fontFamily: {
