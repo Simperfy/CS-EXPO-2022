@@ -1,12 +1,12 @@
 
 
-.projects .carousel-wrapper{
+.carousel-wrapper{
   height:100%;
   /* position:relative; */
   width:100%;
   margin:0 auto;
 }
-.projects .carousel-item{
+.carousel-item{
   position:absolute;
   top:0;
   bottom:0;
@@ -22,14 +22,14 @@
   src: url(/assets/fonts/RoobertHeavy.otf) format("opentype");
 }
 
-.projects h1 {
+ h1 {
   font-family: myFirstFont;
   color: white;
   text-align: center;
   font-size: 1.5em;
 }
 
-.projects p{
+ p{
   font-family: myFirstFont;
   color: white;
   text-align: center;
@@ -37,68 +37,71 @@
 }
 
 @media (min-width: 48rem) {
-  .projects  h1 {
+    h1 {
     font-size: 2.5em;
   }
 
-  .projects  p {
+    p {
     font-size: 1.5em;
   }
 }
 
-.projects .logo-size {
+ .logo-size {
   width: 100%;
-  height: auto;
+  height: 100px;
   max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
-.projects .btn{
+ .btn{
     font-family: myFirstFont;
     font-size: 16px;
     text-align: center;
     color: #9147ff;
     background: transparent;
     border: 2px solid #9147ff;
+    padding: 5px;
 }
-.projects .btn:hover{
+ .btn:hover{
     color: white;
     background-color: #9147ff;
     cursor: pointer;
-
 }
 
-.projects .btn2{
+ .btn2{
     font-family: myFirstFont;
     font-size: 16px;
     text-align: center;
     color: #ffd482;
     background: transparent;
     border: 2px solid #ffd482;
+    padding: 5px;
 }
-.projects .btn2:hover{
+ .btn2:hover{
     color: white;
     background-color: #ffd482;
     cursor: pointer;
 
 }
 
-.projects .btn3{
+ .btn3{
     font-family: myFirstFont;
     font-size: 16px;
     text-align: center;
     color: #323181;
     background: transparent;
     border: 2px solid #323181;
+    padding: 5px;
 }
-.projects .btn3:hover{
+ .btn3:hover{
     color: white;
     background-color: #323181;
     cursor: pointer;
 
 }
-.projects .arrow{
+ .arrow{
   border: solid white;
     border-width: 0 6px 6px 0;
     display: inline-block;
@@ -106,11 +109,11 @@
     opacity: 50%;
 }
 
-.projects .arrow:hover{
+ .arrow:hover{
   opacity: 100;
 }
 
-.projects .arrow-prev{
+ .arrow-prev{
   left:5%;
   position:absolute;
   top:50%;
@@ -118,13 +121,13 @@
   width: 2%;
 }
 
-.projects .arrow-prev::after {
+ .arrow-prev::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
 
-.projects .arrow-next{
+ .arrow-next{
   right:5%;
   position:absolute;
   top:50%;
@@ -132,13 +135,13 @@
   width: 2%;
   }
 
-.projects .arrow-next::after {
+ .arrow-next::after {
     content: "";
     display: block;
     padding-bottom: 100%;
 }
 
-.projects .light{
+ .light{
   color:white;
 }
 
@@ -155,7 +158,7 @@
     display: none;
   }
 
-  .projects .item-1 {
+   .item-1 {
     z-index: 26;
     opacity: 1;
   background:url('/images/projects/background/black.jpg');
@@ -166,7 +169,7 @@
   background-size: cover;
   background-color: #464646;
   }
-  .projects .item-2{
+   .item-2{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -175,7 +178,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-3{
+ .item-3{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -183,16 +186,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-4{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-5{
+ .item-4{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -201,15 +195,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-6{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-7{
+ .item-5{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -218,26 +204,7 @@
   background-size: cover;
   background-color: #464646;
 }
-
-.projects .item-8{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-9{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-10{
+ .item-6{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -245,59 +212,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-11{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-12{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-13{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-14{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-15{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-16{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
-.projects .item-17{
+ .item-7{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -307,7 +222,7 @@
   background-color: #464646;
 }
 
-.projects .item-18{
+ .item-8{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -316,7 +231,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-19{
+ .item-9{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -325,7 +240,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-20{
+ .item-10{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -333,7 +248,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-21{
+ .item-11{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -342,7 +257,16 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-22{
+ .item-12{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-13{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -350,7 +274,33 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-23{
+ .item-14{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-15{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-16{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-17{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -360,7 +310,7 @@
   background-color: #464646;
 }
 
-.projects .item-24{
+ .item-18{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -369,7 +319,7 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-25{
+ .item-19{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -378,7 +328,60 @@
   background-size: cover;
   background-color: #464646;
 }
-.projects .item-26{
+ .item-20{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-21{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-22{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-23{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+ .item-24{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-25{
+  background:url('/images/projects/background/black.jpg');
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+ .item-26{
   background:url('/images/projects/background/black.jpg');
   background-blend-mode: soft-light;
   background-position: center center;
@@ -392,19 +395,19 @@
     opacity: 0;
   }
 
-  .projects #item-1:target ~ .item-1 {
+   #item-1:target ~ .item-1 {
     opacity: 1;
   }
 
-  .projects #item-2:target ~ .item-2, .projects #item-3:target ~ .item-3, .projects #item-4:target ~ .item-4,
-  .projects #item-5:target ~ .item-5, .projects #item-6:target ~ .item-6, .projects #item-7:target ~ .item-7,
-  .projects #item-8:target ~ .item-8, .projects #item-9:target ~ .item-9, .projects #item-10:target ~ .item-10,
-  .projects #item-11:target ~ .item-11, .projects #item-12:target ~ .item-12, .projects #item-13:target ~ .item-13,
-  .projects #item-14:target ~ .item-14, .projects #item-15:target ~ .item-15, .projects #item-16:target ~ .item-16,
-  .projects #item-17:target ~ .item-17, .projects #item-18:target ~ .item-18, .projects #item-19:target ~ .item-19,
-  .projects #item-20:target ~ .item-20, .projects #item-21:target ~ .item-21, .projects #item-22:target ~ .item-22,
-  .projects #item-23:target ~ .item-23, .projects #item-24:target ~ .item-24, .projects #item-25:target ~ .item-25,
-  .projects #item-26:target ~ .item-26 {
+   #item-2:target ~ .item-2,  #item-3:target ~ .item-3,  #item-4:target ~ .item-4,
+   #item-5:target ~ .item-5,  #item-6:target ~ .item-6,  #item-7:target ~ .item-7,
+   #item-8:target ~ .item-8,  #item-9:target ~ .item-9,  #item-10:target ~ .item-10,
+   #item-11:target ~ .item-11,  #item-12:target ~ .item-12,  #item-13:target ~ .item-13,
+   #item-14:target ~ .item-14,  #item-15:target ~ .item-15,  #item-16:target ~ .item-16,
+   #item-17:target ~ .item-17,  #item-18:target ~ .item-18,  #item-19:target ~ .item-19,
+   #item-20:target ~ .item-20,  #item-21:target ~ .item-21,  #item-22:target ~ .item-22,
+   #item-23:target ~ .item-23,  #item-24:target ~ .item-24,  #item-25:target ~ .item-25,
+   #item-26:target ~ .item-26 {
     z-index: 26;
     opacity: 1;
   }
