@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/hero.css';
 
 export default function Hero({title, description, imageSrc, dateObj, inverse = false}) {
 
