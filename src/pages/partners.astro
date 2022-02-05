@@ -5,6 +5,7 @@ import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
 import '../styles/partners.css';
 import {dictString} from '../components/Dictionaries/Strings.js';
+import heroImage from '/images/placeholders/700.png';
 ---
 
 <style>
@@ -21,7 +22,7 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 			<Hero
 				title={ dictString["page_partners"] }
 				description={ dictString["desc_partners"] }
-				imageSrc="./images/placeholders/700.png"
+				imageSrc={heroImage}
 				client:visible
 			/>
 		</HeroContainer>

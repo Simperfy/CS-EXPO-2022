@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import ButtonTheme from './ButtonTheme';
+import csExpoLogo from '/images/logo/64px.png';
+import githubLogo from '/images/github-logo.png';
+
 
 export default function Header() {
 	const [links, setLinks] = useState([
-		{name: 'Home', segment: '/', active: false},
-		{name: 'Projects', segment: '/projects', active: false},
-		{name: 'Partners', segment: '/partners', active: false},
-		{name: 'Gallery', segment: '/gallery', active: false},
-		{name: 'About Us', segment: '/about', active: false}
+		{name: 'Home', segment: '/cs-expo-2022/', active: false},
+		{name: 'Projects', segment: '/cs-expo-2022/projects', active: false},
+		{name: 'Partners', segment: '/cs-expo-2022/partners', active: false},
+		{name: 'Gallery', segment: '/cs-expo-2022/gallery', active: false},
+		{name: 'About Us', segment: '/cs-expo-2022/about', active: false}
 	]);
 
 	const [isDropdownActive, setIsDropdownActive] = useState(false);
@@ -16,7 +19,7 @@ export default function Header() {
 		setIsDropdownActive((prev) => !prev);
 	}
 
-	const isCurrentSegment = (segment) => segment.split('/')[1] === window.location.pathname.split('/')[1];
+	const isCurrentSegment = (segment) => segment.split('/')[2] === window.location.pathname.split('/')[2];
 
 	useEffect(() => {
 		const newLinks = links.map((link) => ({...link, active: isCurrentSegment(link.segment)}));
@@ -28,7 +31,7 @@ export default function Header() {
 			<div className="flex flex-wrap justify-between items-center">
 				<div className="flex flex-wrap w-full md:w-fit justify-between md:justify-start items-center text-center">
 					<a href="/" className="mr-10">
-						<img src="./images/logo/64px.png" />
+						<img src={csExpoLogo} />
 					</a>
 					<button onClick={toggleDropdown} type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
 						<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
@@ -49,7 +52,7 @@ export default function Header() {
 					<div className="h-4 border-l-2 hidden md:block"></div>
 					<ButtonTheme />
 					<a href="https://github.com/Simperfy/CS-EXPO-2022" className="w-5 h-5 block">
-						<img src="./images/github-logo.png" alt="github logo" />
+						<img src={githubLogo} alt="github logo" />
 					</a>
 				</div>
 			</div>
