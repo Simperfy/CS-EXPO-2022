@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export default function ButtonTheme() {
-    const darkModeIcon = '/images/dark-mode.png';
-    const lightModeIcon = '/images/light-mode.png';
+    const darkModeIcon = './images/dark-mode.png';
+    const lightModeIcon = './images/light-mode.png';
 
     const [icon, setIcon] = useState(darkModeIcon);
 
