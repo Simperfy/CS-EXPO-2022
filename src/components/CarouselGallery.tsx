@@ -1,7 +1,8 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselComponent} from 'react-responsive-carousel';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
+import "../styles/gallery.css";
 
 
 
@@ -20,18 +21,23 @@ export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColo
                 {isBigScreen ? (
 
                         imageDesktop.map((imageDesktop) => (
-                            <div key={imageDesktop}>
+                            <div className="relative flex" key={imageDesktop}>
 
-                                <div  class="flex justify-center my-5">
+                                <div  class="flex justify-center">
                                     <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
                                 </div>
-
-                                <div className="inline-grid grid-cols-3 gap-x-15 py-10">
-                                        <img className="h-[400px] mr-5 brightness-75" src={imageDesktop.backgroundImageFirst} />
-                                            <div className="relative ml-5">
-                                                <img className="absolute left-0 bottom-10 h-[400px] brightness-75" src={imageDesktop.backgroundImageSecond} />
-                                            </div>
-                                        <img className="h-[400px] ml-5 brightness-75" src={imageDesktop.backgroundImageThird} />
+                            
+                                <div className="relative flex space-x-10 px-20 my-20">
+                                    
+                                        <div className="flex-auto">
+                                            <img className="brightness-75" src={imageDesktop.backgroundImageFirst} />
+                                        </div>
+                                        <div className="flex-auto -my-16 ">
+                                            <img className="brightness-75" src={imageDesktop.backgroundImageSecond} />           
+                                        </div>
+                                        <div className="flex-auto">
+                                            <img className="brightness-75" src={imageDesktop.backgroundImageThird} />
+                                        </div>
                                 </div>
                             </div>
                         ))
@@ -41,7 +47,7 @@ export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColo
                                 <div  class="flex justify-center my-5">
                                     <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
                                 </div>
-                                    <img className="carousel-img brightness-75" src={imagesMobile.backgroundImage} />
+                                    <img className="brightness-75" src={imagesMobile.backgroundImage} />
                         </div>
 
                 ))) }
