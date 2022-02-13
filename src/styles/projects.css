@@ -1,20 +1,47 @@
-
-
-.carousel-wrapper{
-  height:100%;
+.carousel-wrapper {
+  height: 100%;
   /* position:relative; */
-  width:100%;
-  margin:0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
-.carousel-item{
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:25px 50px;
-  opacity:0;
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.w3-display-middle {
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.w3-center {
+  font-family: "Arial";
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+
+.car:hover .blend {
+  background-blend-mode: soft-light;
+}
+
+.car:hover .w3-display-middle {
+  display: block;
+}
+
+@media (max-width:800px){
+  .car:hover .blend {
+    background-color: #000000dc;
+  }
 }
 
 @font-face {
@@ -22,14 +49,14 @@
   src: url(/assets/fonts/RoobertHeavy.otf) format("opentype");
 }
 
- h1 {
+h1 {
   font-family: myFirstFont;
   color: white;
   text-align: center;
   font-size: 1.5em;
 }
 
- p{
+p {
   font-family: myFirstFont;
   color: white;
   text-align: center;
@@ -37,16 +64,16 @@
 }
 
 @media (min-width: 48rem) {
-    h1 {
+  h1 {
     font-size: 2.5em;
   }
 
-    p {
+  p {
     font-size: 1.5em;
   }
 }
 
- .logo-size {
+.logo-size {
   width: 100%;
   height: 100px;
   max-width: 100px;
@@ -55,360 +82,519 @@
   margin-right: auto;
 }
 
- .btn{
-    font-family: myFirstFont;
-    font-size: 16px;
-    text-align: center;
-    color: #9147ff;
-    background: transparent;
-    border: 2px solid #9147ff;
-    padding: 5px;
+.btn {
+  font-family: myFirstFont;
+  font-size: 16px;
+  text-align: center;
+  color: #9147ff;
+  background: transparent;
+  border: 2px solid #9147ff;
+  padding: 5px;
+  border-radius: 5px;
 }
- .btn:hover{
-    color: white;
-    background-color: #9147ff;
-    cursor: pointer;
-}
-
- .btn2{
-    font-family: myFirstFont;
-    font-size: 16px;
-    text-align: center;
-    color: #ffd482;
-    background: transparent;
-    border: 2px solid #ffd482;
-    padding: 5px;
-}
- .btn2:hover{
-    color: white;
-    background-color: #ffd482;
-    cursor: pointer;
-
+.btn:hover {
+  color: white;
+  background-color: #9147ff;
+  cursor: pointer;
 }
 
- .btn3{
-    font-family: myFirstFont;
-    font-size: 16px;
-    text-align: center;
-    color: #323181;
-    background: transparent;
-    border: 2px solid #323181;
-    padding: 5px;
+.btn2 {
+  font-family: myFirstFont;
+  font-size: 16px;
+  text-align: center;
+  color: #ffd482;
+  background: transparent;
+  border: 2px solid #ffd482;
+  padding: 5px;
+  border-radius: 5px;
 }
- .btn3:hover{
-    color: white;
-    background-color: #323181;
-    cursor: pointer;
+.btn2:hover {
+  color: white;
+  background-color: #ffd482;
+  cursor: pointer;
+}
 
+.btn3 {
+  font-family: myFirstFont;
+  font-size: 16px;
+  text-align: center;
+  color: #323181;
+  background: transparent;
+  border: 2px solid #323181;
+  padding: 5px;
+  border-radius: 5px;
 }
- .arrow{
+.btn3:hover {
+  color: white;
+  background-color: #323181;
+  cursor: pointer;
+}
+.arrow {
   border: solid white;
-    border-width: 0 6px 6px 0;
-    display: inline-block;
-    padding: 12px;
-    opacity: 50%;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 12px;
+  opacity: 50%;
 }
 
- .arrow:hover{
+.arrow:hover {
   opacity: 100;
 }
 
- .arrow-prev{
-  left:5%;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(135deg);
+.arrow-prev {
+  left: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
   width: 2%;
 }
 
- .arrow-prev::after {
+.arrow-prev::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
 
- .arrow-next{
-  right:5%;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(-45deg);
+.arrow-next {
+  right: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
   width: 2%;
-  }
-
- .arrow-next::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
 }
 
- .light{
-  color:white;
+.arrow-next::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.light {
+  color: white;
 }
 
 @media (max-width: 100%) {
-      .arrow, .light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
-      }
-    }
+  .arrow,
+  .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
 
+
+
+.car:hover .blend {
+  background-blend-mode: soft-light;
+}
 
 /*Select every element*/
 [id^="item"] {
-    display: none;
+  display: none;
+}
+
+.item-1 {
+  z-index: 26;
+  opacity: 1;
+  background: url("/images/projects/background/Leukemia.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-2 {
+  background: url("/images/projects/background/Apophenia.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-3 {
+  background: url("/images/projects/background/Bukas.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-4 {
+  background: url("/images/projects/background/Bigkas.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-5 {
+  background: url("/images/projects/background/Banana.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-6 {
+  background: url("/images/projects/background/DeepFake.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-7 {
+  background: url("/images/projects/background/Eyeopener.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+
+.item-8 {
+  background: url("/images/projects/background/Linkdemic.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-9 {
+  background: url("/images/projects/background/Cooleye.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-10 {
+  background: url("/images/projects/background/KYP.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-11 {
+  background: url("/images/projects/background/SVM.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-12 {
+  background: url("/images/projects/background/SkinCap.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-13 {
+  background: url("/images/projects/background/HappyFeet.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-14 {
+  background: url("/images/projects/background/VForce.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-15 {
+  background: url("/images/projects/background/CrowdDetect.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-16 {
+  background: url("/images/projects/background/Usbong.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-17 {
+  background: url("/images/projects/background/Pawmance.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+/* NO BACKGROUND AICE AICE BABY */
+.item-18 {
+  background: url("/images/projects/background/black.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-19 {
+  background: url("/images/projects/background/Nutrify.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-20 {
+  background: url("/images/projects/background/DETECH.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-21 {
+  background: url("/images/projects/background/CardioGo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-22 {
+  background: url("/images/projects/background/meSafe.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-23 {
+  background: url("/images/projects/background/Balikas.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+/* NO LOGO */
+.item-24 {
+  background: url("/images/projects/background/Cloudentifier.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+.item-25 {
+  background: url("/images/projects/background/Ernie.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000dc;
+}
+
+.item-26 {
+  background: url("/images/projects/background/Catnip.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+
+.item-27 {
+  background: url("/images/projects/background/sungka.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000dc;
+}
+
+/* POSTERS */
+@media (max-width: 800px) {
+  .item-1 {
+    background: url("/images/projects/poster/leukemia.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-2 {
+    background: url("/images/projects/poster/apophenia.jpg");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-3 {
+    background: url("/images/projects/poster/bukas.jpg");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-4 {
+    background: url("/images/projects/poster/bigkas.jpg");
+    background-position: right;
+    background-size: cover;
+  }  
+  .item-5 {
+    background: url("/images/projects/poster/banana.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-6 {
+    background: url("/images/projects/poster/deepfake.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-7 {
+    background: url("/images/projects/poster/eyeopener.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-8 {
+    background: url("/images/projects/poster/linkdemic.jpg");
+    background-position: center center;
+    background-size: cover;
+  } 
+  .item-9 {
+    background: url("/images/projects/poster/4ace.png");
+    background-position: top;
+    background-size: cover;
+  }  
+  .item-10 {
+    background: url("/images/projects/poster/kyp.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-11 {
+    background: url("/images/projects/poster/svm.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-12 {
+    background: url("/images/projects/poster/skincap.png");
+    background-position: left;
+    background-size: cover;
+  }  
+  .item-13 {
+    background: url("/images/projects/poster/happyfeet.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-14 {
+    background: url("/images/projects/poster/vforce.jpg");
+    background-position: left;
+    background-size: cover;
+  }  
+  .item-15 {
+    background: url("/images/projects/poster/crowd.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-16 {
+    background: url("/images/projects/poster/usbong.JPG");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-17 {
+    background: url("/images/projects/poster/pawmance.jpg");
+    background-position: right;
+    background-size: cover;
+  }  
+  .item-18 {
+    background: url("/images/projects/poster/aice.jpg");
+    background-position: center center;
+    background-size: cover;
+  } 
+  .item-19 {
+    background: url("/images/projects/poster/nutrify.png");
+    background-position: top;
+    background-size: cover;
+  }  
+  .item-20 {
+    background: url("/images/projects/poster/detech.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-21 {
+    background: url("/images/projects/poster/cardiogo.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-22 {
+    background: url("/images/projects/poster/mesafe.jpg");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-23 {
+    background: url("/images/projects/poster/balikas.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-24 {
+    background: url("/images/projects/poster/cloudentifier.png");
+    background-position: center center;
+    background-size: cover;
+  }  
+  .item-25 {
+    background: url("/images/projects/poster/ernie.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-26 {
+    background: url("/images/projects/poster/catnip.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  .item-27 {
+    background: url("/images/projects/poster/sungka.jpg");
+    background-position: center center;
+    background-size: cover;
   }
 
-   .item-1 {
-    z-index: 26;
-    opacity: 1;
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  }
-   .item-2{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-3{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-4{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-5{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-6{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-7{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-
- .item-8{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-9{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-10{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-11{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-12{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-13{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-14{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-15{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-16{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-17{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-
- .item-18{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-19{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-20{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-21{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-22{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-23{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
-
- .item-24{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-25{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
- .item-26{
-  background:url('/images/projects/background/black.jpg');
-  background-blend-mode: soft-light;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  
 }
 
 
 *:target ~ .item-1 {
-    opacity: 0;
-  }
+  opacity: 0;
+}
 
-   #item-1:target ~ .item-1 {
-    opacity: 1;
-  }
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
 
-   #item-2:target ~ .item-2,  #item-3:target ~ .item-3,  #item-4:target ~ .item-4,
-   #item-5:target ~ .item-5,  #item-6:target ~ .item-6,  #item-7:target ~ .item-7,
-   #item-8:target ~ .item-8,  #item-9:target ~ .item-9,  #item-10:target ~ .item-10,
-   #item-11:target ~ .item-11,  #item-12:target ~ .item-12,  #item-13:target ~ .item-13,
-   #item-14:target ~ .item-14,  #item-15:target ~ .item-15,  #item-16:target ~ .item-16,
-   #item-17:target ~ .item-17,  #item-18:target ~ .item-18,  #item-19:target ~ .item-19,
-   #item-20:target ~ .item-20,  #item-21:target ~ .item-21,  #item-22:target ~ .item-22,
-   #item-23:target ~ .item-23,  #item-24:target ~ .item-24,  #item-25:target ~ .item-25,
-   #item-26:target ~ .item-26 {
-    z-index: 26;
-    opacity: 1;
-  }
-
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5,
+#item-6:target ~ .item-6,
+#item-7:target ~ .item-7,
+#item-8:target ~ .item-8,
+#item-9:target ~ .item-9,
+#item-10:target ~ .item-10,
+#item-11:target ~ .item-11,
+#item-12:target ~ .item-12,
+#item-13:target ~ .item-13,
+#item-14:target ~ .item-14,
+#item-15:target ~ .item-15,
+#item-16:target ~ .item-16,
+#item-17:target ~ .item-17,
+#item-18:target ~ .item-18,
+#item-19:target ~ .item-19,
+#item-20:target ~ .item-20,
+#item-21:target ~ .item-21,
+#item-22:target ~ .item-22,
+#item-23:target ~ .item-23,
+#item-24:target ~ .item-24,
+#item-25:target ~ .item-25,
+#item-26:target ~ .item-26,
+#item-27:target ~ .item-27 {
+  z-index: 27;
+  opacity: 1;
+}
