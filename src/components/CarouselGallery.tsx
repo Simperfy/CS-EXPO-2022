@@ -21,14 +21,13 @@ export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColo
                 {isBigScreen ? (
 
                         imageDesktop.map((imageDesktop) => (
-                            <div className="relative flex" key={imageDesktop}>
+                            <div key={imageDesktop}>
 
                                 <div  class="flex justify-center">
                                     <div class="flex flex-wrap justify-center md:justify-start font-display font-black text-4xl text-[#9147FF]">{slideTitle}</div>
                                 </div>
                             
                                 <div className="relative flex space-x-10 px-20 my-20">
-                                    
                                         <div className="flex-auto">
                                             <img className="brightness-75" src={imageDesktop.backgroundImageFirst} />
                                         </div>
