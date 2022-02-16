@@ -28,7 +28,7 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
                                 </span>
                             </p>
                         }
-                        <p className="text-2xl md:w-3/6 text-white">{description}</p>
+                        <p className="text-2xl xl:w-3/6 text-white">{description}</p>
                     </div>
                     <div className="hidden md:block">
                         <img className="hero-img brightness-75" src={imageSrc} alt="feature image" />
@@ -53,7 +53,7 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
                                 </span>
                             </p>
                         }
-                        <p className="text-2xl md:w-3/6 text-white">{description}</p>
+                        <p className="text-2xl xl:w-3/6 text-white">{description}</p>
                     </div>
                 </div>
             }
