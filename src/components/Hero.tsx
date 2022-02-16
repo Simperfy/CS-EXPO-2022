@@ -17,7 +17,7 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
             {
                 !inverse &&
                 <div className="flex justify-between">
-                    <div className="flex flex-col justify-center items-center md:items-start text-center gap-1 px-4 py-8 md:text-left md:ml-14 md:py-0 md:px-0">
+                    <div className="flex flex-col justify-center items-center md:items-start text-center gap-1 px-4 py-8 md:text-left md:ml-14 md:px-0 md:max-w-[50vw]">
                         <div className="flex flex-wrap justify-center md:justify-start gap-2 font-display font-black text-6xl">{colorizeTitle(title)}</div>
                         {
                             dateObj &&
@@ -31,7 +31,7 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
                         <p className="text-2xl md:w-3/6 text-white">{description}</p>
                     </div>
                     <div className="hidden md:block">
-                        <img className="hero-img" src={imageSrc} alt="feature image" />
+                        <img className="hero-img brightness-75" src={imageSrc} alt="feature image" />
                     </div>
                 </div>
             }
@@ -40,9 +40,9 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
                 inverse &&
                 <div className="flex justify-between">
                     <div className="hidden md:block">
-                        <img className="hero-img-inverse" src={imageSrc} alt="feature image" />
+                        <img className="hero-img-inverse brightness-75" src={imageSrc} alt="feature image" />
                     </div>
-                    <div className="flex flex-col justify-center items-center md:items-start text-center gap-1 px-4 py-8 md:text-left md:ml-40 md:py-0 md:px-0">
+                    <div className="flex flex-col justify-center items-center md:items-start text-center gap-1 px-4 py-8 md:text-left md:ml-40 md:px-0 md:max-w-[50vw]">
                         <div className="flex flex-wrap justify-center md:justify-center gap-2 font-display font-black text-6xl">{colorizeTitle(title)}</div>
                         {
                             dateObj &&
