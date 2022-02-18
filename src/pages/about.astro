@@ -9,13 +9,15 @@ import ModalFaculty from '../components/About/CarouselFaculty.tsx';
 
 const facultyMembers = [
 	{
-		title: "Ms. Rossana T. Adao",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		title: "Mr. Abraham T. Magpantay",
+		shortDescription: "Faculty Member.",
+		longDescription: "Abraham T. Magpantay is a full-time computer science instructor. He received his graduate degree of Master\'s in Computer Science from the Ateneo de Manila University. His field of interest includes computer vision, image processing, remote sensing, algorithms, and software development. Mr. Magpantay is currently the adviser of the Association for Computing Machinery FEU Tech Student Chapter.\n\n\nI would like to congratulate everyone for defending and passing their research, especially to my mentees who were able to overcome all the challenges we faced as a group and individually. May you achieve your goals and continually grow as a computer science professional in the field you would choose.",
 		backgroundImage: "/images/about/ms_adao400x600.png"
 	},
 	{
 		title: "Dr. Shaneth C. Ambat",
-		description: "Senior Director for Computer Studies and Multimedia Arts",
+		shortDescription: "Senior Director for Computer Studies and Multimedia Arts",
+		longDescription: "DR. SHANETH C. AMBAT is currently the Computer Science Program Director at FEU Institute of Technology (FEU TECH), Sampaloc Manila. She was once the Dean of Graduate Studies and College of Computer Studies in AMA University, Quezon City. She graduated from AMA Computer College-Makati City with a degree of Bachelor of Science in Computer Science and Master of Science in Computer Science. She earned her Doctor of Philosophy in Engineering major in Information Technology in Hannam University, South Korea. She was one of the founding Board of Trustees of the Council of Deans of Information Technology Education –INC., NCR. She is a reviewer of paper for publcation: both national and international. The best years of her life was spent in the Academe, where she has more than 20 years experience as an educator with 10 years experience as Program Head and Dean, thus paved the way to some innovations and alignment of curriculum delivery of various HEIs\s. She was also awarded with best presenter and best paper award by international conferences. Her research interest was in Self  Organizing  Map,  Reinforcement  Learning  Algorithm,  Fuzzy Logic,   Machine Learning,   Data   Envelopment Analysis, Ontology, Image Processing and Computer Vision.\n\n\nDear All Members of the Committees of CS EXPO 2022, Year 2022, the 3rd year of Virtual CS EXPO. With the pandemic, time passed so fast and we survived successfully. I believe that every member of the group has been through hard times and adversities while fulfilling the deliverables expected from you and you were able to leverage all those possibilities through computing technologies. Your experience in Thesis 1 and 2 provided you with a rich foundation in research. Show the world you are not here to just pass through. Leave great footprints wherever you pass and be remembered for the change you initiated. (Israelmore Ayivor)",
 		backgroundImage: "/images/about/doc_shane400x600.jpg"
 	}
 ];
@@ -28,24 +30,27 @@ const facultyContent = {
 const committeeMembers = [
 	{
 		title: "Nielsen Bernardo",
-		description: "CS Expo 2022 Head",
+		shortDescription: "CS Expo 2022 Head",
+		longDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: "/images/about/bernardo400x600.png"
 	},
 	{
 		title: "Hezekiah Rizan",
-		description: "CS Expo 2022 Co-Head",
+		shortDescription: "CS Expo 2022 Co-Head",
+		longDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: "/images/about/rizan400x600.jpg"
 	},
 	{
 		title: "Rom Braveheart P. Leuterio",
-		description: "Developers Committee Head.",
+		shortDescription: "Developers Committee Head.",
+		longDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: "/images/about/leuterio400x600.jpg"
 	}
 ];
 
 const committeeContent = {
 	title: "Committee",
-	description: "These are the students who led the Computer Science student-body to make this event possible. Their leadership and the efforts of the members of the committees has brought an event that would showcase solutions to problems in community using computing technologies, and relevant talks of technology trends and opportunities for students."
+	shortDescription: "These are the students who led the Computer Science student-body to make this event possible. Their leadership and the efforts of the members of the committees has brought an event that would showcase solutions to problems in community using computing technologies, and relevant talks of technology trends and opportunities for students."
 };
 
 ---
@@ -76,7 +81,6 @@ const committeeContent = {
 			client:visible
 			images={facultyMembers}
 			title={facultyContent.title}
-			description={facultyContent.description}
 			bgColor={"bg-csPrimaryDark"}
 		/>
 
@@ -84,7 +88,7 @@ const committeeContent = {
 			client:visible
 			images={committeeMembers}
 			title={committeeContent.title}
-			description={committeeContent.description}
+			shortDescription={committeeContent.shortDescription}
 			bgColor={"bg-csBGCommittee"}
 			reverse={true}
 		/>
