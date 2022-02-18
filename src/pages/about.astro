@@ -5,6 +5,7 @@ import Layout from '../layouts/Main.astro';
 import Hero from '../components/Hero.tsx';
 import HeroContainer from '../components/HeroContainer.tsx';
 import CarouselPeople from '../components/CarouselPeople.tsx';
+import ModalFaculty from '../components/About/CarouselFaculty.tsx';
 
 const facultyMembers = [
 	{
@@ -71,7 +72,7 @@ const committeeContent = {
 		</HeroContainer>
 		
 		<!-- Faculty Section -->
-		<CarouselPeople
+		<ModalFaculty
 			client:visible
 			images={facultyMembers}
 			title={facultyContent.title}
