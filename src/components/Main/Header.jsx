@@ -5,7 +5,7 @@ export default function Header() {
 	const [links, setLinks] = useState([
 		{name: 'Home', segment: '/', active: false},
 		{name: 'Projects', segment: '/projects', active: false},
-		{name: 'Partners', segment: '/partners', active: false},
+		// {name: 'Partners', segment: '/partners', active: false},
 		{name: 'Gallery', segment: '/gallery', active: false},
 		{name: 'About Us', segment: '/about', active: false}
 	]);
