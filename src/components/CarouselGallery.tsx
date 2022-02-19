@@ -1,14 +1,8 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselComponent} from 'react-responsive-carousel';
-import { useMediaQuery } from 'react-responsive';
-
-
-
 
 export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColor}) {
-    const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
-
     return (
         <>
             {/* @ts-ignore */}
