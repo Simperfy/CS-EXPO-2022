@@ -17,7 +17,7 @@ const facultyMembers = [
 	{
 		title: "Ms. May San Pablo",
 		shortDescription: "CS Faculty Member",
-		longDescription: "I’m May Florence D. San Pablo, a Computer Science Professor.  I believe that God is the source of all our blessings.",
+		longDescription: "I\'m May Florence D. San Pablo, a Computer Science Professor.  I believe that God is the source of all our blessings.",
 		message: "Congratulations! Thank you for choosing me as your mentor.  I am very proud of you.  Let us thank God for the wisdom and strength He has given us. ",
 		backgroundImage: "/images/about/faculty/ms_may400x600.jpg"
 	},
@@ -45,16 +45,13 @@ const facultyMembers = [
 	{
 		title: "Dr. Rhonnel S. Paculanan",
 		shortDescription: "CS Faculty Member.",
-		longDescription: "Dr. Paculanan is afaculty/ graduate of Doctor in Philosophy major in Education aslo academic completed from the course Doctor of Technology at TUP, graduated BSCS and Master of Science in Computer Science  (MSCS) at AMA computer university, Philippines. He is also a researcher, wherein he published research national and international and one of these is “LPG Leakage Detector using Arduino with SMS Alert and Sound Alarm”. He also attended conference, seminar and workshop here in the Philippines and outside the country. He’s interest of research is more on Technology specially IoT, Data mining and IT. He is an editorial and technical board member and peer reviewer in some International and National Journals.",
+		longDescription: "Dr. Paculanan is afaculty/ graduate of Doctor in Philosophy major in Education aslo academic completed from the course Doctor of Technology at TUP, graduated BSCS and Master of Science in Computer Science  (MSCS) at AMA computer university, Philippines. He is also a researcher, wherein he published research national and international and one of these is “LPG Leakage Detector using Arduino with SMS Alert and Sound Alarm”. He also attended conference, seminar and workshop here in the Philippines and outside the country. He\'s interest of research is more on Technology specially IoT, Data mining and IT. He is an editorial and technical board member and peer reviewer in some International and National Journals.",
 		message: "",
 		backgroundImage: "/images/about/faculty/sir_paculanan400x600.jpg"
 	}
 ];
 
-const facultyContent = {
-	title: "Faculty",
-	description: "These are the mentors behind the great minds of the Computer Science department. They are the representatives and leaders of the whole towards innovations. Students and faculty alike, are given opportunities to show their knowledge and skills in building solutions due to their efforts in bringing quality service to the whole department."
-};
+const facultyTitle = "Faculty";
 
 const committeeMembers = [
 	{
@@ -119,10 +116,7 @@ const committeeMembers = [
 	}
 ];
 
-const committeeContent = {
-	title: "Committee",
-	shortDescription: "These are the students who led the Computer Science student-body to make this event possible. Their leadership and the efforts of the members of the committees has brought an event that would showcase solutions to problems in community using computing technologies, and relevant talks of technology trends and opportunities for students."
-};
+const committeeTitle = "Committee";
 
 ---
 
@@ -152,14 +146,14 @@ const committeeContent = {
 		<CarouselFaculty
 			client:visible
 			images={facultyMembers}
-			title={facultyContent.title}
+			title={facultyTitle}
 			bgColor={"bg-csPrimaryDark"}
 		/>
 
 		<CarouselFaculty
 			client:visible
 			images={committeeMembers}
-			title={committeeContent.title}
+			title={committeeTitle}
 			bgColor={"bg-csBGCommittee"}
 			reverse={true}
 		/>
