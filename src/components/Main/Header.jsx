@@ -45,7 +45,7 @@ export default function Header() {
 					</div>
 				</div>
 				<div className={`${!isDropdownActive && 'hidden'} ${isDropdownActive && 'flex'} md:flex md:flex-row flex-wrap flex-col gap-4 items-center justify-center w-full md:w-fit`}>
-					<a href="https://docs.google.com/forms/d/1zRGPzcybfqVVQjdYie0QzWFKLclLI9mHdAXmEgdmrv8/edit?usp=sharing" className="bg-csPrimary rounded py-1 px-2 text-white block font-bold">Register</a>
+					<a href="https://forms.gle/nAWRFvRyk2eNvDop6" className="bg-csPrimary rounded py-1 px-2 text-white block font-bold">Register</a>
 					<div className="h-4 border-l-2 hidden md:block"></div>
 					{/* <ButtonTheme /> */}
 					<a href="https://github.com/Simperfy/CS-EXPO-2022" className="w-5 h-5 block">
