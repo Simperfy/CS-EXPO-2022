@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselComponent } from 'react-responsive-carousel';
 
@@ -6,12 +5,12 @@ import { Carousel as CarouselComponent } from 'react-responsive-carousel';
 // bgColor should be valid tailwind bg color class
 // reverse is boolean determining the orientation of the carousel
 export default function CarouselFaculty({ images, title, bgColor, reverse = false }) {
-
     return (
         <>
             {/* @ts-ignore */}
             <CarouselComponent
                 showThumbs={false}
+                showStatus={false}
             >
                 {images.map((image) => (
                     <div className={`flex gap-24 h-fit py-24 ${bgColor} ${reverse && 'flex-row-reverse'}`}>
