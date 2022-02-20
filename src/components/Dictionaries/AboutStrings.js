@@ -49,61 +49,61 @@ const committeeMembers = [
 	{
 		title: "Nielsen John M. Bernardo",
 		shortDescription: "CS Expo 2022 Head",
-		longDescription: "Bernardo is the CS Expo 2022 Head. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Head was in-charge of managing the event and all the committee members involved in it. The head was the one who supervised the activities and progress done by its members. They fulfilled the functions of task management, decision making, and supervision of all members.",
 		backgroundImage: "/images/about/committee/bernardo400x600.png"
 	},
 	{
 		title: "Hezekiah John V. Rizan",
 		shortDescription: "CS Expo 2022 Co-Head",
-		longDescription: "Rizan is the co-head for CS Expo 2022. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Co-Head's role was to provide assistance to the head and its functions. The co-head facilitated the initial approval of activities and progress of the committee members before the final approval of the head. They similarly fulfilled the roles of the head.",
 		backgroundImage: "/images/about/committee/rizan400x600.jpg"
 	},
 	{
 		title: "Drake Myer J. Jordan",
 		shortDescription: "Programs Committee Head.",
-		longDescription: "Jordan is the head for the Programs committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Programs Committee focused on event planning and implementation, ensuring that the event runs smoothly. This committee was mainly concerned with the creation of program flow, contents for event promotions, finding of the MC's for the events and etc.",
 		backgroundImage: "/images/about/committee/jordan400x600.png"
 	},
 	{
 		title: "Brielle T. Romero",
 		shortDescription: "Creatives Committee Head.",
-		longDescription: "Romero is the head for the Creatives committee. This comittee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Creatives Committee was in charge of all the design-related tasks for the event. They focused on creating the graphics, video presentations, and visual materials to be used for the event and its promotions. They were also the ones who will layout the photobook and journal for the event.",
 		backgroundImage: "/images/about/committee/brielle400x600.jpg"
 	},
 	{
 		title: "Justine Rose R. Cale",
 		shortDescription: "Documentations Committee Head.",
-		longDescription: "Cale is the head for the Documentations committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Documentation Committee was in charge of all the documents needed for the event. They worked on creating the registration and evaluation forms, documentations about the event, and more.",
 		backgroundImage: "/images/about/committee/justine400x600.png"
 	},
 	{
 		title: "Joshua Jerico Simon B. Ferido",
 		shortDescription: "Speakers Committee Head.",
-		longDescription: "Ferido is the head for the Speakers committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Speakers Committee was in charge of finding the speakers for the events and panelists for the presentation of papers. They worked closely with the Programs Committee.",
 		backgroundImage: "/images/about/committee/ferido400x600.png"
 	},
 	{
 		title: "Lloyd BJ E. Tarronas",
 		shortDescription: "Sponsors Committee Head.",
-		longDescription: "Tarronas is the head for the Sponsors committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Sponsors Committee was mainly focused in finding company sponsors for the event. They were also be tasked with finding organizational or media partners for the event.",
 		backgroundImage: "/images/about/committee/tarronas400x600.jpg"
 	},
 	{
 		title: "Erika Paula S. Lim",
 		shortDescription: "Logistics Committee Head.",
-		longDescription: "Lim is the head for the Logistics committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Logistics Committee took care of all the event needs. They were in charge of the technical needs of the event such as livestreaming, music, event PPT presentation, and more. They also focused on the financial side of the event. This committee also worked closely with the Programs Committee.",
 		backgroundImage: "/images/about/committee/lim400x600.jpg"
 	},
 	{
 		title: "Rom Braveheart P. Leuterio",
 		shortDescription: "Developers - Web Committee Head.",
-		longDescription: "Leuterio is the head for the Developers committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Developers Committee – Website consisted of proficient developers that created the website application for the CS EXPO 2022. This committee served in the oversight role for the website. They maintained and ensured the quality of the content of each section which will show the thesis projects that will be presented in the event, and other details such as the speakers, sponsors, and the faculty.",
 		backgroundImage: "/images/about/committee/leuterio400x600.jpg"
 	},
 	{
 		title: "Abraham Israel G. Fabian",
 		shortDescription: "Developers - Publicity Committee Head.",
-		longDescription: "Fabian is the head for the Developers - Publicity committee. This committee is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		longDescription: "The Developers Committee – Publicity created the FB page for the event where the project teasers and posters were to be posted. They were also in charge of the marketing side of the event including the captions for postings.",
 		backgroundImage: "/images/about/committee/fabian400x600.jpg"
 	}
 ];
