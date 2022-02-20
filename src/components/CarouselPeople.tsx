@@ -5,7 +5,7 @@ import { Carousel as CarouselComponent } from 'react-responsive-carousel';
 // reverse is boolean determining the orientation of the carousel
 export default function CarouselPeople({images, title, description, bgColor, reverse = false}) {
     return (
-        <div className={`flex gap-24 h-fit py-24 ${bgColor} ${reverse && 'flex-row-reverse'}`}>
+        <div className={`flex gap-8 lg:gap-24 h-fit py-24 ${bgColor} ${reverse && 'flex-row-reverse'}`}>
             <div className={`w-full md:w-2/4 flex flex-col justify-center items-center ${reverse ? 'md:items-start' : 'md:items-end'}`}>
                 <div className="w-full block md:hidden">
                     <h1 className="text-4xl font-display font-bold text-csPrimary text-center">{ title }</h1>
@@ -28,9 +28,9 @@ export default function CarouselPeople({images, title, description, bgColor, rev
                     </CarouselComponent>
                 </div>
             </div>
-            <div className={`hidden md:flex md:w-2/4 flex-col justify-center items-center ${reverse ? 'md:items-end' : 'md:items-start'}`}>
+            <div className={`hidden md:flex md:w-2/4 flex-col justify-center items-center gap-2 ${reverse ? 'md:items-end' : 'lg:items-start'}`}>
                 <h1 className="text-4xl font-display font-bold text-csPrimary text-center w-2/3">{ title }</h1>
-                <div className="p-8 rounded border-2 border-csSecondary w-2/3">
+                <div className="p-8 rounded border-2 border-csSecondary w-11/12 lg:w-2/3">
                     <p className="text-white">
                         { description }
                     </p>
