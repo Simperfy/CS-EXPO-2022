@@ -14,8 +14,6 @@
   padding: 50px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  
-  
 }
 
 
@@ -58,7 +56,7 @@
   font-family: myFirstFont;
   color: white;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.0em;
 }
 
 
@@ -423,48 +421,57 @@
   .item-1 {
     background: url("/images/projects/poster/leukemia.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 
   }
   .item-2 {
     background: url("/images/projects/poster/apophenia.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-3 {
     background: url("/images/projects/poster/bukas.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-4 {
     background: url("/images/projects/poster/bigkas.jpg");
-    background-position: right;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-5 {
     background: url("/images/projects/poster/banana.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-6 {
     background: url("/images/projects/poster/deepfake.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-7 {
     background: url("/images/projects/poster/eyeopener.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-8 {
     background: url("/images/projects/poster/linkdemic.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   } 
   .item-9 {
     background: url("/images/projects/poster/4ace.png");
-    background-position: top;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-10 {
     background: url("/images/projects/poster/kyp.png");
@@ -476,87 +483,104 @@
   .item-11 {
     background: url("/images/projects/poster/svm.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-12 {
     background: url("/images/projects/poster/skincap.png");
-    background-position: left;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-13 {
     background: url("/images/projects/poster/happyfeet.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-14 {
     background: url("/images/projects/poster/vforce.jpg");
-    background-position: left;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-15 {
     background: url("/images/projects/poster/crowd.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-16 {
     background: url("/images/projects/poster/usbong.JPG");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-17 {
     background: url("/images/projects/poster/pawmance.jpg");
-    background-position: right;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-18 {
     background: url("/images/projects/poster/aice.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   } 
   .item-19 {
     background: url("/images/projects/poster/nutrify.png");
-    background-position: top;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-20 {
     background: url("/images/projects/poster/detech.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-21 {
     background: url("/images/projects/poster/cardiogo.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-22 {
     background: url("/images/projects/poster/mesafe.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-23 {
     background: url("/images/projects/poster/balikas.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-24 {
     background: url("/images/projects/poster/cloudentifier.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-25 {
     background: url("/images/projects/poster/ernie.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-26 {
     background: url("/images/projects/poster/catnip.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-27 {
     background: url("/images/projects/poster/sungka.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   
