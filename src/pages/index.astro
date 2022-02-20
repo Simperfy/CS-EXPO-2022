@@ -54,8 +54,8 @@ const carouselContent = {
 
 			<Hero
 				title="DEV DAY"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-				Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
+				description="DevDay is an extension of CS Expo, wherein professionals from \
+					the IT field are invited to talk about certain topics."
 				imageSrc="/images/hero/home-2.png"
 				dateObj={{month: 'March 18, 2022', time: '9AM'}}
 				inverse
@@ -65,14 +65,16 @@ const carouselContent = {
 		<div class="relative projects-container">
 			<div class="relative z-10 flex flex-col justify-center items-center h-full">
 				<h1 class="text-4xl font-display font-bold text-csPrimary">Projects</h1>
-				<p class="text-2xl text-center text-white w-2/3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				<p class="text-2xl text-center text-white w-2/3 ">Check out each group that will present their projects in the event.
+					They will show their knowledge and skills with their unique ideas and cool applications.
+					The topics revolve around artificial intelligence, machine learning, image classification, and more.
 				</p>
 				<a class="mt-4 border-2 p-2 rounded border-csSecondary text-csSecondary font-bold font-2xl w-fit hover:bg-csSecondary hover:text-white" href="/projects">View List</a>
 			</div>
-			<img class="block absolute top-0 left-0 h-full w-full filter brightness-[.25]" src="/images/collage.png" alt="Project Collage">
+			<img class="block absolute top-0 left-0 h-full w-full filter brightness-[.25] object-cover" src="/images/collage.png" alt="Project Collage">
 		</div>
 
+		<!--
 		<CarouselPeople
 			client:visible
 			images={carouselPeopleImages}
@@ -80,5 +82,6 @@ const carouselContent = {
 			description={carouselContent.description}
 			bgColor={"bg-csPrimaryDark"}
 		/>
+		-->
 	</div>
 </Layout>
