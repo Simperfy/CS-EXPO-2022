@@ -47,28 +47,18 @@
   src: url(/assets/fonts/RoobertHeavy.otf) format("opentype");
 }
 
-h1 {
+.thesis {
   font-family: myFirstFont;
   color: white;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* .rob {
-  font-family: myFirstFont;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-} */
 
 @media (min-width: 48rem) {
-  h1 {
+  .thesis {
     font-size: 2.5em;
   }
-
-  /* .rob {
-    font-size: 1.5em;
-  } */
 }
 
 .logo-size {
