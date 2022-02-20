@@ -29,7 +29,7 @@ export default function CarouselPeople({images, title, description, bgColor, rev
                     </CarouselComponent>
                 </div>
             </div>
-            <div className={`hidden md:flex md:w-2/4 flex-col justify-center items-center ${reverse ? 'md:items-end' : 'lg:items-start'}`}>
+            <div className={`hidden md:flex md:w-2/4 flex-col justify-center items-center gap-2 ${reverse ? 'md:items-end' : 'lg:items-start'}`}>
                 <h1 className="text-4xl font-display font-bold text-csPrimary text-center w-2/3">{ title }</h1>
                 <div className="p-8 rounded border-2 border-csSecondary w-11/12 lg:w-2/3">
                     <p className="text-white">
