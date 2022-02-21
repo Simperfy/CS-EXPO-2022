@@ -1,8 +1,8 @@
 blockquote {
-    font-size: 1.4em;
+    font-size: 1.25rem;
     font-family: Open Sans;
     font-style:italic;
-    padding:1.2em 30px 1.2em 75px;
+    padding:1.2rem 30px 1.2rem 75px;
     border-left:8px solid rgb(255, 212, 130);
     line-height:1.6;
     position: relative;
