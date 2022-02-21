@@ -24,7 +24,7 @@ export default function CarouselFaculty({ images, title, bgColor, reverse = fals
                                     <img className="h-auto md:h-[600px] brightness-75" src={image.backgroundImage} />
                                     <div className="absolute md:text-left bg-csBGSpeakers py-4 md:left-0 bottom-[3rem] h-fit flex flex-col justify-center items-center md:items-start w-full">
                                         <h1 className="text-2xl pl-3 font-bold italic text-csPrimary">{image.title}</h1>
-                                        <p className="text-xl pl-3 text-white">{image.shortDescription}</p>
+                                        <p className="font-bold pl-3 text-white">{image.shortDescription}</p>
                                     </div>
                                 </div>
                             </div>

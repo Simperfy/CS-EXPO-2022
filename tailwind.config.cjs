@@ -13,7 +13,7 @@ module.exports = {
           csSecondary: '#FFD482',
           csSecondaryDark: '#38342C',
           csBGPrimary: '#333333',
-          csBGSpeakers: '#D0C7B7', 
+          csBGSpeakers: 'rgb(0,0,0, 0.65)',
           csBGGallery:'#FFD4821A',
           csBGCommittee: '#38332C'
         },
