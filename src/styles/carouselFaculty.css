@@ -1,8 +1,10 @@
 blockquote {
-    font-size: 1.25rem;
+    max-height: 16rem;
+    overflow: auto;
+    font-size: 1.4rem;
     font-family: Open Sans;
     font-style:italic;
-    padding:1.2rem 30px 1.2rem 75px;
+    padding:1.2rem 1.875rem 1.2rem 4rem;
     border-left:8px solid rgb(255, 212, 130);
     line-height:1.6;
     position: relative;
@@ -12,7 +14,7 @@ blockquote {
     font-family:Arial;
     content: "\201C";
     color:rgb(255, 212, 130);
-    font-size:4em;
+    font-size: 4rem;
     position: absolute;
     left: 10px;
     top:-10px;
