@@ -13,7 +13,7 @@ export default function Hero({title, description, imageSrc, dateObj, inverse = f
     };
 
     return (
-        <div className={`flex justify-between min-h-[45vh] max-h-[50vh] ${inverse && 'flex-row-reverse'}`}>
+        <div className={`flex justify-between min-h-[45vh] md:max-h-[50vh] ${inverse && 'flex-row-reverse'}`}>
             <div className="flex flex-col justify-center items-center md:items-start text-center gap-1 px-4 py-8 md:text-left md:ml-14 md:px-0 md:max-w-[50vw]">
                 <div className="flex flex-wrap justify-center md:justify-start gap-2 font-display font-black text-6xl">{colorizeTitle(title)}</div>
                 {

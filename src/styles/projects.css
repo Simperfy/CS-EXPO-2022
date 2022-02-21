@@ -1,9 +1,10 @@
 .carousel-wrapper {
   height: 100%;
-  /* position:relative; */
   width: 100%;
   margin: 0 auto;
+  
 }
+
 .carousel-item {
   position: absolute;
   top: 0;
@@ -15,11 +16,14 @@
   transition: all 0.5s ease-in-out;
 }
 
+
 .w3-display-middle {
   width: 70%;
   background-color: rgba(0, 0, 0, 0);
   padding: 10px;
   display: none;
+  
+  
 }
 
 .w3-center {
@@ -30,6 +34,7 @@
 
 .car:hover .blend {
   background-blend-mode: soft-light;
+  
 }
 
 .car:hover .w3-display-middle {
@@ -47,28 +52,18 @@
   src: url(/assets/fonts/RoobertHeavy.otf) format("opentype");
 }
 
-h1 {
+.thesis {
   font-family: myFirstFont;
   color: white;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.0em;
 }
 
-/* .rob {
-  font-family: myFirstFont;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-} */
 
 @media (min-width: 48rem) {
-  h1 {
+  .thesis {
     font-size: 2.5em;
   }
-
-  /* .rob {
-    font-size: 1.5em;
-  } */
 }
 
 .logo-size {
@@ -276,6 +271,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000dc;
+  
 }
 .item-11 {
   background: url("/images/projects/background/SVM.jpg");
@@ -335,7 +331,7 @@ h1 {
 }
 /* NO BACKGROUND AICE AICE BABY */
 .item-18 {
-  background: url("/images/projects/background/black.jpg");
+  background: url("/images/projects/background/Aice.png");
 
   background-position: center center;
   background-repeat: no-repeat;
@@ -420,140 +416,171 @@ h1 {
 
 /* POSTERS */
 @media (max-width: 800px) {
+
+
   .item-1 {
     background: url("/images/projects/poster/leukemia.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
   }
   .item-2 {
     background: url("/images/projects/poster/apophenia.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-3 {
     background: url("/images/projects/poster/bukas.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-4 {
     background: url("/images/projects/poster/bigkas.jpg");
-    background-position: right;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-5 {
     background: url("/images/projects/poster/banana.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-6 {
     background: url("/images/projects/poster/deepfake.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-7 {
     background: url("/images/projects/poster/eyeopener.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-8 {
     background: url("/images/projects/poster/linkdemic.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   } 
   .item-9 {
     background: url("/images/projects/poster/4ace.png");
-    background-position: top;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-10 {
     background: url("/images/projects/poster/kyp.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+;
   }  
   .item-11 {
     background: url("/images/projects/poster/svm.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-12 {
     background: url("/images/projects/poster/skincap.png");
-    background-position: left;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-13 {
     background: url("/images/projects/poster/happyfeet.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-14 {
     background: url("/images/projects/poster/vforce.jpg");
-    background-position: left;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-15 {
     background: url("/images/projects/poster/crowd.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-16 {
     background: url("/images/projects/poster/usbong.JPG");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-17 {
     background: url("/images/projects/poster/pawmance.jpg");
-    background-position: right;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-18 {
     background: url("/images/projects/poster/aice.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   } 
   .item-19 {
     background: url("/images/projects/poster/nutrify.png");
-    background-position: top;
-    background-size: cover;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-20 {
     background: url("/images/projects/poster/detech.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-21 {
     background: url("/images/projects/poster/cardiogo.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-22 {
     background: url("/images/projects/poster/mesafe.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-23 {
     background: url("/images/projects/poster/balikas.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-24 {
     background: url("/images/projects/poster/cloudentifier.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }  
   .item-25 {
     background: url("/images/projects/poster/ernie.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-26 {
     background: url("/images/projects/poster/catnip.png");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .item-27 {
     background: url("/images/projects/poster/sungka.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   
