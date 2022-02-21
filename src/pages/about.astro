@@ -4,53 +4,10 @@ import Layout from '../layouts/Main.astro';
 
 import Hero from '../components/Hero.tsx';
 import HeroContainer from '../components/HeroContainer.tsx';
-import CarouselPeople from '../components/CarouselPeople.tsx';
+import CarouselFaculty from '../components/About/CarouselFaculty.tsx';
 
-const facultyMembers = [
-	{
-		title: "Faculty 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	},
-	{
-		title: "Faculty 2",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	},
-	{
-		title: "Faculty 3",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	}
-];
-
-const facultyContent = {
-	title: "Faculty",
-	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
-};
-
-const committeeMembers = [
-	{
-		title: "Committee Head 1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	},
-	{
-		title: "Committee Head 2",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	},
-	{
-		title: "Committee Head 3",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: "https://placekitten.com/g/400/600"
-	}
-];
-
-const committeeContent = {
-	title: "Committee",
-	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
-};
+// import content strings
+import { facultyMembers, facultyTitle, committeeMembers, committeeTitle } from '../components/Dictionaries/AboutStrings.js';
 
 ---
 
@@ -64,7 +21,6 @@ const committeeContent = {
 
 <Layout title="CS EXPO 2022">
 	<!-- HTML -->
-	<!-- HTML -->
 	<div class="flex flex-col gap-4 pb-4">
 		<HeroContainer client:visible>
 			<Hero
@@ -73,24 +29,22 @@ const committeeContent = {
 					Institute of Technology's Computer Science students. \
 					It shows the students' pursuits in the field of software engineering \
 					to bring solutions to issues in the local community."
-				imageSrc="/images/hero/home-1.png"
+				imageSrc="/images/about/about-hero.png"
 			/>
 		</HeroContainer>
 
 		<!-- Faculty Section -->
-		<CarouselPeople
+		<CarouselFaculty
 			client:visible
 			images={facultyMembers}
-			title={facultyContent.title}
-			description={facultyContent.description}
+			title={facultyTitle}
 			bgColor={"bg-csPrimaryDark"}
 		/>
 
-		<CarouselPeople
+		<CarouselFaculty
 			client:visible
 			images={committeeMembers}
-			title={committeeContent.title}
-			description={committeeContent.description}
+			title={committeeTitle}
 			bgColor={"bg-csBGCommittee"}
 			reverse={true}
 		/>
