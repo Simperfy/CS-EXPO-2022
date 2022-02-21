@@ -1,7 +1,7 @@
 const facultyMembers = [
 	{
 		title: "Dr. Shaneth C. Ambat",
-		shortDescription: "Senior Director for Computer Studies and Multimedia Arts",
+		shortDescription: "Program Director for Computer Studies and Multimedia Arts",
 		longDescription: "Dr. Shaneth C. Ambat is currently the Computer Science Program Director at FEU Institute of Technology, Sampaloc Manila. She was once the Dean of Graduate Studies and College of Computer Studies in AMA University, Quezon City. Her research interest was in Self  Organizing  Map,  Reinforcement  Learning  Algorithm,  Fuzzy Logic,   Machine Learning,   Data   Envelopment Analysis, Ontology, Image Processing and Computer Vision.",
 		message: "Dear All Members of the Committees of CS EXPO 2022, Year 2022, the 3rd year of Virtual CS EXPO. With the pandemic, time passed so fast and we survived successfully. I believe that every member of the group has been through hard times and adversities while fulfilling the deliverables expected from you and you were able to leverage all those possibilities through computing technologies. Your experience in Thesis 1 and 2 provided you with a rich foundation in research. Show the world you are not here to just pass through. Leave great footprints wherever you pass and be remembered for the change you initiated. (Israelmore Ayivor)",
 		backgroundImage: "/images/about/faculty/doc_shane400x600.jpg"
@@ -37,7 +37,7 @@ const facultyMembers = [
 	{
 		title: "Dr. Rhonnel S. Paculanan",
 		shortDescription: "CS Faculty Member.",
-		longDescription: "Dr. Paculanan is afaculty/ graduate of Doctor in Philosophy major in Education aslo academic completed from the course Doctor of Technology at TUP, graduated BSCS and Master of Science in Computer Science  (MSCS) at AMA computer university, Philippines. He is also a researcher, wherein he published research national and international and one of these is “LPG Leakage Detector using Arduino with SMS Alert and Sound Alarm”. He also attended conference, seminar and workshop here in the Philippines and outside the country. He\'s interest of research is more on Technology specially IoT, Data mining and IT. He is an editorial and technical board member and peer reviewer in some International and National Journals.",
+		longDescription: "Dr. Paculanan is a graduate of Doctor in Philosophy major in Education aslo academic completed from the course Doctor of Technology at TUP, graduated BSCS and Master of Science in Computer Science  (MSCS) at AMA computer university, Philippines. He is also a researcher, wherein he published research national and international and one of these is “LPG Leakage Detector using Arduino with SMS Alert and Sound Alarm”. He also attended conference, seminar and workshop here in the Philippines and outside the country. He\'s interest of research is more on Technology specially IoT, Data mining and IT. He is an editorial and technical board member and peer reviewer in some International and National Journals.",
 		message: "",
 		backgroundImage: "/images/about/faculty/sir_paculanan400x600.jpg"
 	}
