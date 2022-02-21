@@ -1,6 +1,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as CarouselComponent} from 'react-responsive-carousel';
+import "../styles/carousel.css"
 
 export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColor}) {
     return (
@@ -18,14 +19,14 @@ export default function Carousel({imagesMobile, imageDesktop, slideTitle, bgColo
                             </div>
 
                             <div className="relative flex space-x-10 px-20 my-20">
-                                <div className="flex-auto">
-                                    <img className="brightness-75" src={imageDesktop.backgroundImageFirst} />
+                                <div className="carousel-card flex-auto">
+                                    <img className="carousel-img brightness-75" src={imageDesktop.backgroundImageFirst} />
                                 </div>
-                                <div className="flex-auto -my-16 ">
-                                    <img className="brightness-75" src={imageDesktop.backgroundImageSecond} />
+                                <div className="carousel-card flex-auto -my-16 ">
+                                    <img className="carousel-img brightness-75" src={imageDesktop.backgroundImageSecond} />
                                 </div>
-                                <div className="flex-auto">
-                                    <img className="brightness-75" src={imageDesktop.backgroundImageThird} />
+                                <div className="carousel-card flex-auto">
+                                    <img className="carousel-img brightness-75" src={imageDesktop.backgroundImageThird} />
                                 </div>
                             </div>
                         </div>
