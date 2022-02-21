@@ -16,12 +16,12 @@ export default function CarouselFaculty({ images, title, bgColor, reverse = fals
                 {images.map((image) => (
                     <div key={image.title} className={`flex gap-24 h-fit py-24 ${bgColor} ${reverse && 'flex-row-reverse'}`}>
                         <div className={`w-full md:w-2/4 flex flex-col justify-center items-center ${reverse ? 'md:items-start' : 'md:items-end'}`}>
-                            <div className="w-full block md:hidden">
+                            <div className="w-full block md:hidden md:mb-5" >
                                 <h1 className="md:text-[11px] text-4xl font-display font-bold text-csPrimary text-center ">{title}</h1>
                             </div>
                             <div className="bg-gray-500 w-full max-w-sm md:w-96 md:p-50 md:box-content" >
                                 <div className="w-auto relative">
-                                    <img className="h-auto md:h-[600px] brightness-75" src={image.backgroundImage} />
+                                    <img className="h-auto md:h-[600px] brightness-75  md:p-50 md:box-content" src={image.backgroundImage} />
                                     <div className="absolute md:text-left bg-csBGSpeakers py-4 md:left-0 bottom-[3rem] h-fit flex flex-col justify-center items-center md:items-start w-full">
                                         <h1 className="text-2xl pl-3 font-bold italic text-csPrimary">{image.title}</h1>
                                         <p className="font-bold pl-3 text-white">{image.shortDescription}</p>
