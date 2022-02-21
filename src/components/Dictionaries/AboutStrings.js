@@ -49,13 +49,13 @@ const committeeMembers = [
 	{
 		title: "Nielsen John M. Bernardo",
 		shortDescription: "CS Expo 2022 Head",
-		longDescription: "The Head was in-charge of managing the event and all the committee members involved in it. The head was the one who supervised the activities and progress done by its members. They fulfilled the functions of task management, decision making, and supervision of all members.",
+		longDescription: "The Head was in-charge of managing the event and all the committee members involved in it. The Head was the one who designated and supervised the activities and progress done by its members. They were also capable of holding general meetings for all committee heads and members to provide reports that are subject for insights and approval. All of the event's agenda and final decisions are mainly coordinated by the Head to the Program Director. They fulfilled the functions of task management, decision making, and supervision of all members. It is with the leadership of the Head that this event was successfully held.",
 		backgroundImage: "/images/about/committee/bernardo400x600.png"
 	},
 	{
 		title: "Hezekiah John V. Rizan",
 		shortDescription: "CS Expo 2022 Co-Head",
-		longDescription: "The Co-Head's role was to provide assistance to the head and its functions. The co-head facilitated the initial approval of activities and progress of the committee members before the final approval of the head. They similarly fulfilled the roles of the head.",
+		longDescription: "The Co-Head's role was to provide assistance to the head and its functions. Coordination with the committee heads were done by the Co-head to oversee the progress of each, which is then reported to the Head. They also facilitated the initial approval of activities and progress of the committee members before the final approval of the Head. It was also their duty to gather necessary information and materials for each of the committees' activities. They similarly fulfilled the roles of the Head. It is with the assistance of the Co-head that each committee fulfilled their roles in the event leading to its success.",
 		backgroundImage: "/images/about/committee/rizan400x600.jpg"
 	},
 	{
