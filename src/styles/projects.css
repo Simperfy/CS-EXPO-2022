@@ -2,7 +2,6 @@
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .carousel-item {
@@ -12,18 +11,16 @@
   left: 0;
   right: 0;
   padding: 50px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
 
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+}
 
 .w3-display-middle {
   width: 70%;
-  background-color: rgba(0, 0, 0, 0);
   padding: 10px;
-  display: none;
-  
-  
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .w3-center {
@@ -31,20 +28,12 @@
   font-size: 16px;
 }
 
-
-.car:hover .blend {
-  background-blend-mode: soft-light;
-  
+.car:hover .carousel-item {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .car:hover .w3-display-middle {
-  display: block;
-}
-
-@media (max-width:800px){
-  .car:hover .blend {
-    background-color: #000000dc;
-  }
+  opacity: 1;
 }
 
 @font-face {
@@ -56,9 +45,8 @@
   font-family: myFirstFont;
   color: white;
   text-align: center;
-  font-size: 1.0em;
+  font-size: 1em;
 }
-
 
 @media (min-width: 48rem) {
   .thesis {
@@ -175,8 +163,6 @@
   }
 }
 
-
-
 .car:hover .blend {
   background-blend-mode: soft-light;
 }
@@ -271,7 +257,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000dc;
-  
 }
 .item-11 {
   background: url("/images/projects/background/SVM.jpg");
@@ -416,70 +401,66 @@
 
 /* POSTERS */
 @media (max-width: 800px) {
-
-
   .item-1 {
     background: url("/images/projects/poster/leukemia.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-
   }
   .item-2 {
     background: url("/images/projects/poster/apophenia.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-3 {
     background: url("/images/projects/poster/bukas.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-4 {
     background: url("/images/projects/poster/bigkas.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-5 {
     background: url("/images/projects/poster/banana.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-6 {
     background: url("/images/projects/poster/deepfake.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-7 {
     background: url("/images/projects/poster/eyeopener.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-8 {
     background: url("/images/projects/poster/linkdemic.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  } 
+  }
   .item-9 {
     background: url("/images/projects/poster/4ace.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-10 {
     background: url("/images/projects/poster/kyp.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-;
-  }  
+  }
   .item-11 {
     background: url("/images/projects/poster/svm.jpg");
     background-position: center center;
@@ -491,49 +472,49 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-13 {
     background: url("/images/projects/poster/happyfeet.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-14 {
     background: url("/images/projects/poster/vforce.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-15 {
     background: url("/images/projects/poster/crowd.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-16 {
     background: url("/images/projects/poster/usbong.JPG");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-17 {
     background: url("/images/projects/poster/pawmance.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-18 {
     background: url("/images/projects/poster/aice.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  } 
+  }
   .item-19 {
     background: url("/images/projects/poster/nutrify.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-20 {
     background: url("/images/projects/poster/detech.jpg");
     background-position: center center;
@@ -551,19 +532,19 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-23 {
     background: url("/images/projects/poster/balikas.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-24 {
     background: url("/images/projects/poster/cloudentifier.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-  }  
+  }
   .item-25 {
     background: url("/images/projects/poster/ernie.jpg");
     background-position: center center;
@@ -582,10 +563,7 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
-  
 }
-
 
 *:target ~ .item-1 {
   opacity: 0;
