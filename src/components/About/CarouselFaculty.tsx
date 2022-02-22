@@ -29,7 +29,7 @@ export default function CarouselFaculty({ images, title, bgColor, reverse = fals
                                 </div>
                             </div>
                         </div>
-                        <div className={`hidden md:flex md:w-5/6 flex-col justify-center items-center ${reverse ? 'md:items-end' : 'md:items-start'}`}>
+                        <div className={`hidden md:flex md:w-5/6 flex-col justify-center items-center gap-2 ${reverse ? 'md:items-end' : 'md:items-start'}`}>
                             <h1 className="text-4xl font-display font-bold text-csPrimary text-center w-11/12 2xl:w-9/12">{title}</h1>
                             <div className="p-8 rounded border-2 border-csSecondary w-11/12 2xl:w-9/12">
                                 <p className="text-white text-justify">
