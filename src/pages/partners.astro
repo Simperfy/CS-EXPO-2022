@@ -4,7 +4,13 @@ import Layout from '../layouts/Partners.astro'
 import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
 import '../styles/partners.css';
-import {dictString} from '../components/Dictionaries/Strings.js';
+import {
+	partnerStrPlaceholder
+	, partnerStrGB
+	, partnerStrMB
+	, partnerStrByte
+	, partnerUni
+	} from '../components/Dictionaries/PartnerStrings.js';
 ---
 
 <style>
@@ -12,30 +18,263 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 	margin-bottom: -2vh;
     object-fit: none;
 }
+
 </style>
 
-<Layout title= { dictString["page_partners"] } >
+<Layout title= { partnerStrPlaceholder["page_partners"] } >
 	<!-- HTML -->
 	<div class="flex flex-col gap-24 pb-24">
 		<HeroContainer client:visible>
 			<Hero
-				title={ dictString["page_partners"] }
-				description={ dictString["desc_partners"] }
+				title={ partnerStrPlaceholder["page_partners"] }
+				description={ partnerStrPlaceholder["desc_partners"] }
 				imageSrc="/images/hero/home-1.png"
 				client:visible
 			/>
 		</HeroContainer>
 	</div>
-	<div class="container-fluid" style="background: rgba(145, 71, 255, 0.1);">
-		<div class="container ps-5 pt-5 pb-5" >
+
+	<!-- Main Body -->
+
+	<div class="container-fluid" style="background: rgb(45 38 56)">
+
+		<!-- PartnerGB -->
+		<div class="container pt-5 pb-5">
+			<h1 class="text-center mb-4 partner-section fs-1">
+				{ partnerStrGB["Partners_Title"] }
+			</h1>
+    	</div>
+		<div class="container ps-5 pt-5 pb-5" style="background: rgba(145, 71, 255, 0.1);" >
+			<div class="container">
+				<div class="row justify-content-center mb-3">
+
+					<!-- PartnerGB_7 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_7_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_7_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_7_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_7_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_7_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_7_Link_2_Description"] }
+									</a>
+								</h2>
+								<br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_7_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_7_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+					
+					<!-- PartnerGB_2 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_2_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_2_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_2_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_2_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_2_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_2_Link_2_Description"] }
+									</a>
+								</h2>
+								<br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_2_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_2_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+				<div class="row justify-content-center mb-3">
+
+					<!-- PartnerGB_3 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_3_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_3_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_3_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_3_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_3_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_3_Link_2_Description"] }
+									</a>
+								</h2>
+								<br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_3_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_3_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+
+					<!-- PartnerGB_4 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_4_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_4_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_4_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_4_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_4_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_4_Link_2_Description"] }
+									</a>
+								</h2>
+								<br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_4_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_4_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<!-- PartnerGB_6 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_6_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_6_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_6_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_6_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_6_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_6_Link_2_Description"] }
+									</a>
+								</h2>
+								<br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_6_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_6_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mb-3">
+
+					<!-- PartnerGB_1 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_1_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-2">{ partnerStrGB["Partner_1_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_1_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_1_Link_1_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_1_Link_2"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_1_Link_2_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_1_Link_3"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_1_Link_3_Description"] }
+									</a>
+									<a target="_blank" href={ partnerStrGB["Partner_1_Link_4"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-spotify"></i>&nbsp;&nbsp;
+										{ partnerStrGB["Partner_1_Link_4_Description"] }
+									</a>
+								</h2>
+								<br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_1_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_1_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- PartnerGB_5 -->
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src={ partnerStrGB["Partner_5_Image"] }/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrGB["Partner_5_Title"] }</h1>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_5_Link_1"] } class="card-text partner-desc d-flex justify-content-center">
+										<i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										{ partnerStrGB["Partner_5_Link_1_Description"] }
+									</a>
+								</h2>
+								<br><br><br>
+								<h2 class="card-text">
+									<a target="_blank" href={ partnerStrGB["Partner_5_Email"] } class="card-text partner-email d-flex justify-content-center">
+										<i class="fa fa-at"></i>&nbsp;
+										{ partnerStrGB["Partner_5_Email_Description"] }
+									</a>&nbsp;
+								</h2>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- PartnerMB -->
+		<!-- <div class="container pt-5 pb-5">
+			<h1 class="text-center mb-4 partner-section fs-1">
+				{ partnerStrMB["Partners_Title"]}
+			</h1>
+    	</div>
+
+		<div class="container ps-5 pt-5 pb-5" style="background: rgba(145, 71, 255, 0.1);" >
 			<div class="container">
 				<div class="row justify-content-center mb-3">
 					<div class="col-lg-3 col-md-3 text-center me-3">
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -43,8 +282,8 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -52,37 +291,8 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center mb-3">
-					<div class="col-lg-3 col-md-3 text-center me-3">
-						<div class="container card mt-4">
-							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
-							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 text-center me-3">
-						<div class="container card mt-4">
-							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
-							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 text-center me-3">
-						<div class="container card mt-4">
-							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
-							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -92,8 +302,8 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -101,8 +311,8 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -110,8 +320,149 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 						<div class="container card mt-4">
 							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
 							<div class="card-body">
-								<h1 class="card-text partner-name mb-3">{ dictString["placeholder_title"] }</h1>
-								<h2 class="card-text">{ dictString["placeholder_long"] }</h2>
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- PartnerByte -->
+		<!-- <div class="container pt-5 pb-5">
+			<h1 class="text-center mb-4 partner-section fs-1">
+				{ partnerStrByte["Partners_Title"]}
+			</h1>
+    	</div>
+
+		<div class="container ps-5 pt-5 pb-5" style="background: rgba(145, 71, 255, 0.1);" >
+			<div class="container">
+				
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="https://placekitten.com/g/225/150"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- PartnerUni -->
+		<div class="container pt-5 pb-5">
+			<h1 class="text-center mb-4 partner-section fs-1">
+				{ partnerUni["Partners_Title"]}
+			</h1>
+    	</div>
+
+		<div class="container ps-5 pt-5 pb-5" style="background: rgba(145, 71, 255, 0.1);" >
+			<div class="container">
+				<div class="row justify-content-center mb-3">
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="images/partners/uni/partner_1.jpg"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="images/partners/uni/partner_2.jpg"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 text-center me-3">
+						<div class="container card mt-4">
+							<img class="card-image-top" src="images/partners/uni/partner_3.jpg"/>
+							<div class="card-body">
+								<h1 class="card-text partner-name mb-3">{ partnerStrPlaceholder["placeholder_title"] }</h1>
+								<h2 class="card-text">{ partnerStrPlaceholder["placeholder_long"] }</h2>
 							</div>
 						</div>
 					</div>
@@ -119,9 +470,10 @@ import {dictString} from '../components/Dictionaries/Strings.js';
 			</div>
 		</div>
 
-
-
+		<!-- https://github.com/Raitou -->
+		<div class="container pt-5 pb-5">
+			<h1 class="text-center mb-4 partner-section fs-1">
+			</h1>
+    	</div>
 	</div>
-
-
 </Layout>

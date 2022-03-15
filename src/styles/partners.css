@@ -1,60 +1,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-.partner-disp{
-	/* Auto layout */
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-
-	background: rgba(145, 71, 255, 0.1);
-}
-
-.partner-cards{
-	/* Auto layout */
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 24px;
-
-	position: static;
-	width: 325px;
-	height: 254px;
-	left: 147.5px;
-	top: 0px;
-
-	background: #F3F4F6;
-	border-radius: 5px;
-
-	/* Inside auto layout */
-
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-	margin: 0px 48px;
-}
-
-.partner-rectangle{
-    position: static;
-    width: 150px;
-    height: 100px;
-    top: 0px;
-
-    background: #C4C4C4;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
 .partner-name{
-    font-family: Roboto;
+    font-family: Ginto Nord, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: auto;
@@ -62,7 +10,6 @@
     /* identical to box height */
 
     text-align: center;
-    text-decoration-line: underline;
 
     /* main */
 
@@ -71,13 +18,29 @@
 
 .partner-desc{
 
-    font-family: Roboto;
+    font-family: Ginto Nord, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: auto;
     text-align: center;
 
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(0, 0, 0);
+}
 
+.partner-email{
+
+    font-family: Ginto Nord, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+}
+
+.partner-section{
+    font-family: Ginto Nord, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(145 71 255 )
 }
