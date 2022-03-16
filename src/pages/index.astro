@@ -4,37 +4,7 @@ import Layout from '../layouts/Main.astro'
 import HeroContainer from '../components/HeroContainer.tsx';
 import Hero from '../components/Hero.tsx';
 import CarouselFaculty from '../components/About/CarouselFaculty.tsx';
-
-// TODO: move to json or md
-const speakers = [
-	{
-		title: "Ernesto ‘Boogie’ C. Boydon",
-		shortDescription: "Author and Public Speaker | Computer Scientist | Educator | Techno-Entrepreneur",
-		longDescription: `In 2013, He became the recipient of the
-			Esther A. Vibal Award for Education
-			Technology and Innovation, the first
-			ever in this category, given by the
-			Philippine Association for the
-			Advancement of Science (PhilAAS).
-			PhilAAS, which was established in
-			1951, is a non-profit private national
-			organization that aims to promote
-			and broaden the base of scientific
-			advancement in the country. He was
-			recognized for my work on e-learning
-			systems. In 2020, He ranked #18 of the Top 100
-			Filipinos to Follow on LinkedIn for
-			Inspiration and Learning and was
-			featured in Marketing in Asia.`,
-		message: "",
-		backgroundImage: "/images/speakers/boogie.jpg"
-	},
-];
-
-const carouselContent = {
-	title: "Speakers",
-	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis neque vel augue dictum scelerisque ut nec sapien."
-};
+import {speakers} from '../components/Dictionaries/SpeakersStrings.js';
 ---
 
 <!-- CSS scoped -->
@@ -84,7 +54,7 @@ const carouselContent = {
 		<CarouselFaculty
 			client:visible
 			images={speakers}
-			title={carouselContent.title}
+			title={"Speaker"}
 			bgColor={"bg-csPrimaryDark"}
 		/>
 	</div>
