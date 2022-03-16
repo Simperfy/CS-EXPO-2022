@@ -73,6 +73,16 @@ const partnerStrGB = {
     "Partner_7_Link_2_Description" : "Website",
     "Partner_7_Email" : "mailto:info@orangeandbronze.com",
     "Partner_7_Email_Description" : "info@orangeandbronze.com",
+    
+    "Partner_8_Title" : "PINOY IP WORKS, INCORPORATED",
+    "Partner_8_Image" : "images/partners/gigabyte/partner_8.jpg",
+    "Partner_8_Link_1" : "https://www.facebook.com/pinoyipworks/",
+    "Partner_8_Link_1_Description" : "Facebook",
+    "Partner_8_Link_2" : "https://www.pinoyipworks.com/",
+    "Partner_8_Link_2_Description" : "Website",
+    "Partner_8_Email" : "mailto:info@pinoyipworks.com",
+    "Partner_8_Email_Description" : "info@pinoyipworks.com",
+
 
 };
 
@@ -100,11 +110,37 @@ const partnerStrByte = {
 const partnerUni = {
     "Partners_Title" : "UNIVERSITY ORG PARTNERS",
 
-    "placeholder_title" : "Lorem ipsum",
-    "placeholder_medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc interdum sollicitudin purus, eu sollicitudin nisi porta in.",
-    "placeholder_long" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc interdum sollicitudin purus, eu sollicitudin nisi porta in. Integer fringilla aliquet felis, et convallis ex euismod nec.",
-    "page_partners" : "Our Partners",
-    "desc_partners" : "We at CS EXPO 2022 have partnered with exceptional companies and organizations in order to bring this event to fruition. Check them out and get to know them.",
+    "Partner_1_Title" : "UP DILIMAN ACM STUDENT CHAPTER",
+    "Partner_1_Image" : "images/partners/uni/partner_1.jpg",
+    "Partner_1_Link_1" : "https://www.facebook.com/upacm",
+    "Partner_1_Link_1_Description" : "Facebook",
+    "Partner_1_Link_2" : "https://twitter.com/upacm",
+    "Partner_1_Link_2_Description" : "Twitter",
+    "Partner_1_Link_3" : "https://upacm.net/",
+    "Partner_1_Link_3_Description" : "Website",
+    "Partner_1_Email" : "mailto:council@upacm.net",
+    "Partner_1_Email_Description" : "council@upacm.net",
+
+    "Partner_2_Title" : "FEU-TECH ACM STUDENT CHAPTER",
+    "Partner_2_Image" : "images/partners/uni/partner_2.jpg",
+    "Partner_2_Link_1" : "https://www.facebook.com/feutechACM",
+    "Partner_2_Link_1_Description" : "Facebook",
+    "Partner_2_Link_2" : "https://twitter.com/feutechACM",
+    "Partner_2_Link_2_Description" : "Twitter",
+    "Partner_2_Link_3" : "https://feutech.acm.org/",
+    "Partner_2_Link_3_Description" : "Website",
+    "Partner_2_Email" : "mailto:acm.feu.it@gmail.com",
+    "Partner_2_Email_Description" : "acm.feu.it@gmail.com",
+
+    "Partner_3_Title" : "NU COMPUTER SOCIETY",
+    "Partner_3_Image" : "images/partners/uni/partner_3.jpg",
+    "Partner_3_Link_1" : "https://www.facebook.com/NUComputerSociety",
+    "Partner_3_Link_1_Description" : "Facebook",
+    "Partner_3_Link_2" : "https://twitter.com/nu_comsoc",
+    "Partner_3_Link_2_Description" : "Twitter",
+    "Partner_3_Email" : "mailto:nucomsoc@national-u.edu.ph",
+    "Partner_3_Email_Description" : "nucomsoc@national-u.edu.ph",
+
 };
 
 
