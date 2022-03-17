@@ -19,7 +19,7 @@ export default function CarouselFaculty({ images, title, bgColor, reverse = fals
                             <div className="w-full block md:hidden">
                                 <h1 className="text-4xl font-display font-bold text-csPrimary text-center">{title}</h1>
                             </div>
-                            <div className="bg-gray-500 w-full max-w-sm md:w-96">
+                            <div className="w-full max-w-sm md:w-96">
                                 <div className="w-auto md:h-[600px] flex flex-col justify-center relative">
                                     <img className="h-auto brightness-75" src={image.backgroundImage} />
                                     <div className="absolute md:text-left bg-csBGSpeakers py-4 md:left-0 bottom-[3rem] h-fit flex flex-col justify-center items-center md:items-start w-full">
