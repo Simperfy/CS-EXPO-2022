@@ -13,7 +13,7 @@ import{_ as e}from"./preload-helper.8b70a8dd.js";import{c as o,o as r}from"./ven
 			systems. In 2020, He ranked #18 of the Top 100
 			Filipinos to Follow on LinkedIn for
 			Inspiration and Learning and was
-			featured in Marketing in Asia.`,message:"",backgroundImage:"/images/speakers/boogie.jpg"},{title:"Ken Mandigma",shortDescription:"Chief Executive Officer",longDescription:`Ken is one the youngest
+			featured in Marketing in Asia.`,message:"",backgroundImage:"images/speakers/boogie.jpg"},{title:"Ken Mandigma",shortDescription:"Chief Executive Officer",longDescription:`Ken is one the youngest
         COO in the Philippines
         having founded 3 ventures
         at the age of 26, Ken is the
@@ -36,7 +36,7 @@ import{_ as e}from"./preload-helper.8b70a8dd.js";import{c as o,o as r}from"./ven
         8CHAIN, a cryptocurrency
         project that aims to
         transform lives one chain
-        at a time.`,message:"",backgroundImage:"/images/speakers/mandigma.jpg"},{title:"Benjoe Vidal",shortDescription:"Founder \u2013 TrashCashPH",longDescription:`8 years working experience in mobile app development for both Android
+        at a time.`,message:"",backgroundImage:"images/speakers/mandigma.jpg"},{title:"Benjoe Vidal",shortDescription:"Founder \u2013 TrashCashPH",longDescription:`8 years working experience in mobile app development for both Android
         and iOS.
         Knowledgeable with different Architectural pattern implementation such as
         VIP Clean Swift, MVC, MVP and MVVM experienced managing multiple
@@ -49,8 +49,8 @@ import{_ as e}from"./preload-helper.8b70a8dd.js";import{c as o,o as r}from"./ven
         Knowledgeable in creating unit test script.
         Working knowledge with integrating SDK and API tools such as Facebook
         API, Fabrics, Google Map, Paypal, UnionBank payment gateway, in-app
-        purchase, and other third-party libraries.`,message:"",backgroundImage:"/images/speakers/benjoevidal.jpg"},{title:"Calen Martin D. Legaspi",shortDescription:"Chief Executive Officer & Founder, Orange & Bronze Software Labs",longDescription:`In 2005, founded Orange & Bronze Software Labs, the first company in the
+        purchase, and other third-party libraries.`,message:"",backgroundImage:"images/speakers/benjoevidal.jpg"},{title:"Calen Martin D. Legaspi",shortDescription:"Chief Executive Officer & Founder, Orange & Bronze Software Labs",longDescription:`In 2005, founded Orange & Bronze Software Labs, the first company in the
         Philippines, and one of the first companies in Asia, to adopt Agile Software
         Software Development in its operations, and to offer training and coaching in
         Agile Software Development. Partnered with Oracle, Google and Pivotal.
-        `,message:"",backgroundImage:"/images/speakers/legaspi.jpg"}],title:"Speaker",bgColor:"bg-csPrimaryDark"},i)});o("1MaWen",{value:!0},async()=>{const[{default:n},{default:t}]=await Promise.all([e(()=>import("./HeroContainer.2bf8fe1e.js"),["assets/HeroContainer.2bf8fe1e.js","assets/vendor.a4811180.js"]),e(()=>import("./client.e028ff5f.js"),["assets/client.e028ff5f.js","assets/vendor.a4811180.js"])]);return(a,i)=>t(a)(n,{},i)});r("JaMkJ",{value:!0},async()=>{const[{default:n},{default:t}]=await Promise.all([e(()=>import("./Header.7b341409.js"),["assets/Header.7b341409.js","assets/vendor.a4811180.js"]),e(()=>import("./client.e028ff5f.js"),["assets/client.e028ff5f.js","assets/vendor.a4811180.js"])]);return(a,i)=>t(a)(n,{},i)});
+        `,message:"",backgroundImage:"images/speakers/legaspi.jpg"}],title:"Speaker",bgColor:"bg-csPrimaryDark"},i)});o("1MaWen",{value:!0},async()=>{const[{default:n},{default:t}]=await Promise.all([e(()=>import("./HeroContainer.2bf8fe1e.js"),["assets/HeroContainer.2bf8fe1e.js","assets/vendor.a4811180.js"]),e(()=>import("./client.e028ff5f.js"),["assets/client.e028ff5f.js","assets/vendor.a4811180.js"])]);return(a,i)=>t(a)(n,{},i)});r("JaMkJ",{value:!0},async()=>{const[{default:n},{default:t}]=await Promise.all([e(()=>import("./Header.7b341409.js"),["assets/Header.7b341409.js","assets/vendor.a4811180.js"]),e(()=>import("./client.e028ff5f.js"),["assets/client.e028ff5f.js","assets/vendor.a4811180.js"])]);return(a,i)=>t(a)(n,{},i)});
