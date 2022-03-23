@@ -48,8 +48,11 @@ export default function Header() {
 					<a href="https://forms.gle/nAWRFvRyk2eNvDop6" className="bg-csPrimary rounded py-1 px-2 text-white block font-bold">Register</a>
 					<div className="h-4 border-l-2 hidden md:block"></div>
 					{/* <ButtonTheme /> */}
-					<a href="https://github.com/Simperfy/CS-EXPO-2022" className="w-5 h-5 block">
-						<img src="/images/github-logo.png" alt="github logo" />
+					<a href="https://feutech.acm.org/" className="block">
+						<img src="/images/logo/fit-acm.png" alt="fit-acm logo" />
+					</a>
+					<a href="https://www.facebook.com/csfeutech/" className="block">
+						<img src="/images/logo/facebook.png" alt="facebook logo" />
 					</a>
 				</div>
 			</div>
